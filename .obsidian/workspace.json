@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "7b6fef486f24111d",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "e544c9627b1ffeb7",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,8 +204,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "a159c80315c760a7",
+  "active": "e544c9627b1ffeb7",
   "lastOpenFiles": [
+    "2026-08-03.md",
+    "Sin título.md",
     "POO/Descargado/apunte-teoria.pdf",
     "Base de Datos/Cursada/Cursada.md",
     "POO/Descargado/material del 2023/Trabajos Prácticos/Trabajos Practicos Resueltos/Trabajo Práctico 2/Trabajo Práctico 2.md",
@@ -232,7 +233,6 @@
     "Base de Datos/Descargado/Practica/TP3/TP3.md",
     "Base de Datos/Descargado/Practica/SQL/serie 3/serie 3.md",
     "Base de Datos/Descargado/Practica/SQL/serie 2/serie 2.md",
-    "Base de Datos/Descargado/Practica/SQL/serie 1B/serie 1B.md",
     "Sin título.canvas",
     "UNNE-LSI-main/UNNE-LSI-main/Materias/Probabilidad y Estadistica/Finales/Libres/Modelos final libre.pdf",
     "UNNE-LSI-main/UNNE-LSI-main/Materias/Ingles Tecnico/Unidad 1/Trabajo Practico UNIDAD 1.pdf",
@@ -247,7 +247,6 @@
     "POO/UNNE/Sin título.canvas",
     "POO/Practica antes de clases/calculadora/operacion.java",
     "POO/Practica antes de clases/calculadora/CalculadoraMain.java",
-    "POO/Practica antes de clases/calculadora",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42 3.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42 2.jpg",
