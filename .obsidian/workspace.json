@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7b6fef486f24111d",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e544c9627b1ffeb7",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -204,9 +204,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "e544c9627b1ffeb7",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "2026-08-03.md",
+    "Sin título 1.canvas",
     "Sin título.md",
     "POO/Descargado/apunte-teoria.pdf",
     "Base de Datos/Cursada/Cursada.md",
@@ -232,7 +233,6 @@
     "Base de Datos/Descargado/Proyecto/Proyecto.md",
     "Base de Datos/Descargado/Practica/TP3/TP3.md",
     "Base de Datos/Descargado/Practica/SQL/serie 3/serie 3.md",
-    "Base de Datos/Descargado/Practica/SQL/serie 2/serie 2.md",
     "Sin título.canvas",
     "UNNE-LSI-main/UNNE-LSI-main/Materias/Probabilidad y Estadistica/Finales/Libres/Modelos final libre.pdf",
     "UNNE-LSI-main/UNNE-LSI-main/Materias/Ingles Tecnico/Unidad 1/Trabajo Practico UNIDAD 1.pdf",
@@ -257,7 +257,6 @@
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40 3.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40 2.jpg",
-    "Sin título 1.canvas",
     "Sin título 2.canvas"
   ]
 }
