@@ -10,10 +10,10 @@ private String apellido;
 private int anioNacimiento;
 
 public persona(int dni, String nombre, String apellido, int anioNacimiento) {
-    this.dni = dni;
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.anioNacimiento = anioNacimiento;
+       setDni(dni);
+       setNombre(nombre);
+       setApellido(apellido);
+       setAnioNacimiento(anioNacimiento);
 }
 
 private void setDNI(int dni) {
