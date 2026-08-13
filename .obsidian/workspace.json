@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Base de Datos/Cursada/Cursada.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Cursada"
             }
           }
         ]
@@ -204,7 +208,7 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "a159c80315c760a7",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "POO/Cursada/TP2/Ejercicio 2/personaMain",
     "POO/personaMain.class",
