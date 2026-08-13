@@ -11,14 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Base de Datos/Cursada/Cursada.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Cursada"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -210,6 +206,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Base de Datos/Cursada",
+    "Base de Datos/Cursada/Cursada.md",
     "POO/Cursada/TP2/Ejercicio 2/personaMain",
     "POO/personaMain.class",
     "POO/persona.class",
@@ -220,11 +218,9 @@
     "POO/Cursada/TP2/Ejercicio 2/personaMain.java",
     "POO/Cursada/TP2/Ejercicio 2/persona.java",
     "POO/Cursada/TP2/Ejercicio 2",
-    "POO/Cursada/TP2/Trabajo Práctico 2.pdf",
     "Sin título 1.canvas",
     "2026-08-03.md",
     "Sin título.md",
-    "Base de Datos/Cursada/Cursada.md",
     "POO/Descargado/material del 2023/Trabajos Prácticos/Trabajos Practicos Resueltos/Trabajo Práctico 2/Trabajo Práctico 2.md",
     "POO/Descargado/practica/TPs/TP3_OrbanTobias_RamirezMaximiliano Recuperatorio/TP3_OrbanTobias_RamirezMaximiliano Recuperatorio.md",
     "POO/Descargado/practica/TPs/TP3_OrbanTobias_RamirezMaximiliano Recuperatorio/doc/doc.md",
