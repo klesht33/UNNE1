@@ -10,7 +10,7 @@ private String apellido;
 private int anioNacimiento;
 
 public persona(int dni, String nombre, String apellido, int anioNacimiento) {
-       setDni(dni);
+       setDNI(dni);
        setNombre(nombre);
        setApellido(apellido);
        setAnioNacimiento(anioNacimiento);

@@ -1,5 +1,3 @@
-package Cursada.TP1;
-
 public class Multiplo{
 
     public static void main(String[] args){
