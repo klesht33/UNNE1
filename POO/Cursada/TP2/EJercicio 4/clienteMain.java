@@ -1,6 +1,20 @@
 import javax.swing.JOptionPane;
 
+/**
+ * Ejecuta una demostración del uso de la clase {@link cliente}.
+ *
+ * @version 1.0
+ */
 public class clienteMain {
+
+    /**
+     * Solicita los datos de un cliente y muestra su información.
+     *
+     * @param args argumentos recibidos desde la línea de comandos
+     */
+
+
+
 
     public static void main(String[] args) {
        
