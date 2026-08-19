@@ -12,7 +12,7 @@ public class personaMain {
      * @param args argumentos recibidos desde la línea de comandos
      */
     public static void main(String[] args) {
-        persona p = new persona(35123456, "Jaaaaauaaaaaaassssssn", "Pérez", 2005);
+       persona persona1 = new persona(46773971, "luis", "bonessi", 2005);
         p.mostrar();
     }
 }
