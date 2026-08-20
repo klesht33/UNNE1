@@ -1,0 +1,8 @@
+#BlueJ class context
+#Wed Aug 19 22:33:57 ART 2026
+comment0.target=LaboratorioMain
+comment0.text=\r\n Ejecuta una demostraci\u00F3n del uso de la clase {@link laboratorio}.\r\n\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment1.text=\r\n Crea un laboratorio y muestra sus datos por consola.\r\n\r\n @param args argumentos recibidos desde la l\u00EDnea de comandos\r\n
+numComments=2
