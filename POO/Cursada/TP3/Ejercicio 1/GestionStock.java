@@ -1,6 +1,3 @@
-import javax.swing.JOptionPane;
-
-
 public class GestionStock {
     public static void main(String[] args){
         Laboratorio colgate = new Laboratorio("Colgate S.A.", "Scalabrini Ortiz 5524", "54-11 -4239-8447");
