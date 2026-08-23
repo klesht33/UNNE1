@@ -24,8 +24,6 @@ public class clienteMain {
         double saldo = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el saldo inicial:"));
         
         cliente c = new cliente(nroDNI, apellido, nombre, saldo);
-        double importe = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el importe a agregar:"));
-        c.agregarSaldo(importe);
         c.mostrar();
     }
 }

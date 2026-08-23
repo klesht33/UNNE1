@@ -126,8 +126,7 @@ public class cliente {
      * @return resultado de sumar el importe al saldo actual
      */
     public double agregarSaldo(double importe){
-        setSaldo(getSaldo() + importe);
-        return getSaldo();
+        return getSaldo() + importe;
     }
 
     /**
