@@ -23,8 +23,8 @@ public class Docente {
         this.grado = grado;
     }
 
-    public void setSueldoBasico(double sueldoBasico) {
-        this.sueldoBasico = sueldoBasico;
+    public void setSueldoBasico(double p_sueldoBasico) {
+        this.sueldoBasico = p_sueldoBasico;
     }
 
     public double getAsignacionFamiliar() {
