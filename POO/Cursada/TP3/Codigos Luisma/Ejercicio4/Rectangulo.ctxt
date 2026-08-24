@@ -1,0 +1,26 @@
+#BlueJ class context
+#Sun Aug 23 19:57:13 ART 2026
+comment0.target=Rectangulo
+comment1.params=pOrigen pAncho pAlto
+comment1.target=Rectangulo(punto, double, double)
+comment10.target=double perimetro()
+comment11.target=double superficie()
+comment12.params=otroRectangulo
+comment12.target=double distanciaA(Rectangulo)
+comment13.params=otroRectangulo
+comment13.target=Rectangulo elMayor(Rectangulo)
+comment14.target=void mostrarDatos()
+comment2.params=pAncho pAlto
+comment2.target=Rectangulo(double, double)
+comment3.params=pAncho
+comment3.target=void setAncho(double)
+comment4.params=pAlto
+comment4.target=void setAlto(double)
+comment5.params=pOrigen
+comment5.target=void setOrigen(punto)
+comment6.target=double getAncho()
+comment7.target=double getAlto()
+comment8.target=punto getOrigen()
+comment9.params=pDx pDy
+comment9.target=void desplazar(double, double)
+numComments=15

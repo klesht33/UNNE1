@@ -1,0 +1,8 @@
+#BlueJ class context
+#Sat Aug 22 15:34:35 ART 2026
+comment0.target=puntoMain
+comment0.text=\r\n Punto de entrada de la aplicacion para crear y manipular puntos\r\n en un plano cartesiano.\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment1.text=\r\n Solicita las coordenadas de un punto mediante cuadros de dialogo,\r\n crea el objeto correspondiente, muestra su informaci\u00F3n y permite\r\n desplazarlo.\r\n\r\n @param args argumentos de linea de comandos; no se utilizan.\r\n
+numComments=2
