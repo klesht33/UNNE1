@@ -5,8 +5,6 @@ public class Circulo {
     public Circulo(double pRadio, punto pCentro){
         this.setRadio(pRadio);
         this.setCentro(pCentro);
-        this.radio = pRadio;
-        this.centro = pCentro;
     }
     
     public Circulo(){

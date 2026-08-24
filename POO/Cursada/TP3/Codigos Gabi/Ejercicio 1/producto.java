@@ -113,10 +113,10 @@ public class producto {
         
             default:
                 setStock(getStock() - p_cantidad);
+                System.out.println("Stock: " + getStock());
                 break;
         }
 
-        System.out.println("Stock: " + getStock());
     }
 
     public double stockValorizado(){
