@@ -3,10 +3,11 @@ import java.util.GregorianCalendar;
 
 /**
  * Representa una persona mediante sus datos personales y fecha de nacimiento.
- *
- * @version 2.0
+ * 
+ * @author Gabi
+ * @version 1.0
  */
-public class persona {
+public class Persona {
 
     /** Documento Nacional de Identidad de la persona. */
     private int dni;
@@ -20,13 +21,13 @@ public class persona {
     /**
      * Constructor que crea una persona recibiendo el año de nacimiento (mantiene protocolo anterior).
      *
-     * @param p_dni            Documento Nacional de Identidad
-     * @param p_nombre         Nombre de la persona
-     * @param p_apellido       Apellido de la persona
-     * @param p_anio           Año de nacimiento
+     * @param p_dni      Documento Nacional de Identidad
+     * @param p_nombre   Nombre de la persona
+     * @param p_apellido Apellido de la persona
+     * @param p_anio     Año de nacimiento
      */
-    public persona(int p_dni, String p_nombre, String p_apellido, int p_anio) {
-        this.setDni(p_dni);
+    public Persona(int p_dni, String p_nombre, String p_apellido, int p_anio) {
+        this.setDNI(p_dni);
         this.setNombre(p_nombre);
         this.setApellido(p_apellido);
         this.setAnioNacimiento(p_anio);
@@ -35,30 +36,30 @@ public class persona {
     /**
      * Constructor que crea una persona recibiendo la fecha de nacimiento completa.
      *
-     * @param p_dni            Documento Nacional de Identidad
-     * @param p_nombre         Nombre de la persona
-     * @param p_apellido       Apellido de la persona
-     * @param p_fecha          Fecha de nacimiento como Calendar
+     * @param p_dni      Documento Nacional de Identidad
+     * @param p_nombre   Nombre de la persona
+     * @param p_apellido Apellido de la persona
+     * @param p_fecha    Fecha de nacimiento como Calendar
      */
-    public persona(int p_dni, String p_nombre, String p_apellido, Calendar p_fecha) {
-        this.setDni(p_dni);
+    public Persona(int p_dni, String p_nombre, String p_apellido, Calendar p_fecha) {
+        this.setDNI(p_dni);
         this.setNombre(p_nombre);
         this.setApellido(p_apellido);
         this.setFechaNacimiento(p_fecha);
     }
 
     /**
-     * Asigna el DNI de la persona.
-     *
+     * Asigna el Documento Nacional de Identidad.
+     * 
      * @param p_dni DNI a asignar
      */
-    private void setDni(int p_dni) {
+    private void setDNI(int p_dni) {
         this.dni = p_dni;
     }
 
     /**
      * Asigna el nombre de la persona.
-     *
+     * 
      * @param p_nombre nombre a asignar
      */
     private void setNombre(String p_nombre) {
@@ -67,7 +68,7 @@ public class persona {
 
     /**
      * Asigna el apellido de la persona.
-     *
+     * 
      * @param p_apellido apellido a asignar
      */
     private void setApellido(String p_apellido) {
@@ -75,8 +76,8 @@ public class persona {
     }
 
     /**
-     * Asigna la fecha de nacimiento a partir de un año (mantiene protocolo).
-     *
+     * Asigna el año de nacimiento estableciendo la fecha al 1 de enero de dicho año.
+     * 
      * @param p_anio año de nacimiento
      */
     private void setAnioNacimiento(int p_anio) {
@@ -85,16 +86,25 @@ public class persona {
 
     /**
      * Asigna la fecha de nacimiento de la persona.
-     *
-     * @param p_fecha fecha de nacimiento como Calendar
+     * 
+     * @param p_fecha fecha de nacimiento
      */
     private void setFechaNacimiento(Calendar p_fecha) {
         this.fechaNacimiento = p_fecha;
     }
 
     /**
-     * Obtiene el DNI de la persona.
-     *
+     * Obtiene el Documento Nacional de Identidad.
+     * 
+     * @return DNI de la persona
+     */
+    public int getDNI() {
+        return this.dni;
+    }
+
+    /**
+     * Obtiene el DNI (alias con convención camelCase).
+     * 
      * @return DNI de la persona
      */
     public int getDni() {
@@ -102,17 +112,8 @@ public class persona {
     }
 
     /**
-     * Obtiene el DNI de la persona (alias para compatibilidad).
-     *
-     * @return DNI de la persona
-     */
-    public int getDNI() {
-        return this.getDni();
-    }
-
-    /**
      * Obtiene el nombre de la persona.
-     *
+     * 
      * @return nombre de la persona
      */
     public String getNombre() {
@@ -121,7 +122,7 @@ public class persona {
 
     /**
      * Obtiene el apellido de la persona.
-     *
+     * 
      * @return apellido de la persona
      */
     public String getApellido() {
@@ -129,8 +130,8 @@ public class persona {
     }
 
     /**
-     * Obtiene el año de nacimiento a partir de la fecha de nacimiento (mantiene protocolo).
-     *
+     * Obtiene el año de nacimiento de la persona.
+     * 
      * @return año de nacimiento
      */
     public int getAnioNacimiento() {
@@ -138,27 +139,28 @@ public class persona {
     }
 
     /**
-     * Obtiene la fecha de nacimiento de la persona.
-     *
-     * @return fecha de nacimiento como Calendar
+     * Obtiene la fecha de nacimiento completa como Calendar.
+     * 
+     * @return fecha de nacimiento
      */
     public Calendar getFechaNacimiento() {
         return this.fechaNacimiento;
     }
 
     /**
-     * Calcula la edad exacta de la persona a partir de la fecha actual.
+     * Calcula la edad exacta de la persona en función de la fecha actual.
      *
      * @return edad en años
      */
     public int edad() {
-        Calendar fechaHoy = new GregorianCalendar();
-        int anioHoy = fechaHoy.get(Calendar.YEAR);
-        int edad = anioHoy - this.getAnioNacimiento();
+        Calendar hoy = new GregorianCalendar();
+        int anioHoy = hoy.get(Calendar.YEAR);
+        int anioNac = this.getAnioNacimiento();
+        int edad = anioHoy - anioNac;
 
-        if (fechaHoy.get(Calendar.MONTH) < this.getFechaNacimiento().get(Calendar.MONTH) ||
-            (fechaHoy.get(Calendar.MONTH) == this.getFechaNacimiento().get(Calendar.MONTH) &&
-             fechaHoy.get(Calendar.DAY_OF_MONTH) < this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH))) {
+        if (hoy.get(Calendar.MONTH) < this.getFechaNacimiento().get(Calendar.MONTH) ||
+            (hoy.get(Calendar.MONTH) == this.getFechaNacimiento().get(Calendar.MONTH) &&
+             hoy.get(Calendar.DAY_OF_MONTH) < this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH))) {
             edad--;
         }
 
@@ -166,27 +168,27 @@ public class persona {
     }
 
     /**
-     * Retorna el nombre y apellido separados por un espacio.
-     *
-     * @return nombre y apellido
+     * Retorna el nombre y apellido separados por espacio.
+     * 
+     * @return cadena con "Nombre Apellido"
      */
-    public String nomYape() {
+    public String nomYAp() {
         return this.getNombre() + " " + this.getApellido();
     }
 
     /**
-     * Retorna el nombre y apellido (alias por compatibilidad).
-     *
-     * @return nombre y apellido
+     * Alias de nomYAp().
+     * 
+     * @return cadena con "Nombre Apellido"
      */
-    public String nomYAp() {
-        return this.nomYape();
+    public String nomYape() {
+        return this.nomYAp();
     }
 
     /**
-     * Retorna el apellido y nombre separados por coma y espacio.
-     *
-     * @return apellido y nombre
+     * Retorna el apellido y nombre separados por coma.
+     * 
+     * @return cadena con "Apellido, Nombre"
      */
     public String apeYnom() {
         return this.getApellido() + ", " + this.getNombre();
@@ -207,8 +209,7 @@ public class persona {
      * Muestra por consola los datos principales de la persona.
      */
     public void mostrar() {
-        System.out.println("Nombre y Apellido: " + this.nomYape());
-        System.out.println("DNI: " + this.getDni() + " Edad: " + this.edad() + " años");
+        System.out.println("Nombre y Apellido: " + this.nomYAp());
+        System.out.println("DNI: " + this.getDNI() + " Edad: " + this.edad() + " años");
     }
-
 }

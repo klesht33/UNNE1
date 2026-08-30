@@ -1,7 +1,18 @@
 import java.util.Random;
 
+/**
+ * Clase ejecutable para crear, desplazar, comparar y medir distancias entre objetos de tipo Circulo.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class CreaFigura{
 
+    /**
+     * Método principal que realiza demostraciones y cálculos con círculos.
+     * 
+     * @param args argumentos de la línea de comandos
+     */
     public static void main(String [] args){
         Random unNumero = new Random ();
         

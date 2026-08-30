@@ -2,6 +2,8 @@
  * La clase Punto representa un punto en un plano cartesiano,
  * definido por sus coordenadas X e Y.
  *
+ * @author Gabi
+ * @version 1.0
  */
 public class punto {
 
@@ -71,6 +73,12 @@ public class punto {
         return this.y;
     }
     
+    /**
+     * Calcula la distancia euclídea entre este punto y otro punto recibido por parámetro.
+     * 
+     * @param ptoDistante punto hacia el cual se calcula la distancia
+     * @return distancia euclídea entre ambos puntos
+     */
     public double distanciaA(punto ptoDistante){
         // Diferencia en X
         double dx = ptoDistante.getX() - this.getX();
@@ -79,6 +87,7 @@ public class punto {
         // Pitagoras
         return Math.sqrt (dx * dx + dy * dy);
     }
+
     /**
      * Desplaza el punto sumando los valores indicados
      * a sus coordenadas actuales.

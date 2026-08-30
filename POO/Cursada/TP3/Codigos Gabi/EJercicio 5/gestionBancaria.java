@@ -1,7 +1,18 @@
 import javax.swing.JOptionPane;
 
+/**
+ * Clase ejecutable para interactuar con el usuario y gestionar operaciones de CuentaBancaria.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class gestionBancaria {
 
+   /**
+    * Método principal que solicita datos de titular y cuenta, y realiza depósitos y extracciones.
+    * 
+    * @param args argumentos de línea de comandos
+    */
    public static void main(String[] args) {
       int nroCuenta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de cuenta:"));
       int dni = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el DNI del titular:"));

@@ -1,7 +1,18 @@
 import javax.swing.JOptionPane;
 
+/**
+ * Clase ejecutable para la gestión hospitalaria, captura de datos filiatorios y consultas de pacientes.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class GestionHospital {
 
+    /**
+     * Método principal que interactúa con el usuario para cargar datos de hospital, paciente y localidad.
+     * 
+     * @param args argumentos de línea de comandos
+     */
     public static void main(String[] args) {
 
         String nombreLocalidad = JOptionPane.showInputDialog("Ingrese el nombre de la localidad de nacimiento: ");

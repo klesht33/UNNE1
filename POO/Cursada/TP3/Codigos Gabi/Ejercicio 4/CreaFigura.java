@@ -1,6 +1,18 @@
 import java.util.Random;
  
+/**
+ * Clase ejecutable para crear, desplazar, comparar y calcular distancias entre instancias de Rectangulo.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class CreaFigura{
+
+    /**
+     * Método principal que instancia y manipula rectángulos.
+     * 
+     * @param args argumentos de línea de comandos
+     */
     public static void main (String [] args){
         Random unNumero = new Random();
         

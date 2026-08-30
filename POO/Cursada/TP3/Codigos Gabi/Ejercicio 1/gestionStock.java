@@ -1,5 +1,16 @@
+/**
+ * Clase ejecutable para gestionar y probar el stock de productos y su interacción con Laboratorio.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class gestionStock {
 
+    /**
+     * Método principal que ejecuta las pruebas sobre producto y laboratorio.
+     * 
+     * @param args argumentos de línea de comandos
+     */
     public static void main (String[] args){
 
         Laboratorio p0 = new Laboratorio("Colgate", "Junin", "379523489");

@@ -1,7 +1,18 @@
 import java.util.Scanner;
 
+/**
+ * Clase ejecutable para simular los actos del Registro Civil: creación de personas, casamiento y divorcio.
+ * 
+ * @author Gabi
+ * @version 1.0
+ */
 public class RegistroCivil {
 
+    /**
+     * Método principal que interactúa por consola simulando el registro de matrimonio y divorcio.
+     * 
+     * @param args argumentos de línea de comandos
+     */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
@@ -16,7 +27,7 @@ public class RegistroCivil {
 
         System.out.print("Ingrese Edad: ");
         int edad = teclado.nextInt();
-        teclado.nextLine(); // Limpia buffer
+        teclado.nextLine();
 
         Hombre hombre = new Hombre(nombre, apellido, edad);
 
@@ -31,7 +42,7 @@ public class RegistroCivil {
 
         System.out.print("Ingrese Edad: ");
         edad = teclado.nextInt();
-        teclado.nextLine(); // Limpia buffer
+        teclado.nextLine();
 
         Mujer mujer = new Mujer(nombre, apellido, edad);
 
