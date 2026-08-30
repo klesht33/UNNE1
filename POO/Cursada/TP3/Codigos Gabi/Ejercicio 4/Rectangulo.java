@@ -57,7 +57,7 @@ public class Rectangulo {
 
     public Rectangulo elMayor(Rectangulo otroRectangulo){
         if(this.superficie() > otroRectangulo.superficie()){
-            return this.superficie();
+            return this;
         }
         else{
             return otroRectangulo;

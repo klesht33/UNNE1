@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "2a216f03d0133a89",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "8a583850c142dec5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -204,19 +204,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "8a583850c142dec5",
   "lastOpenFiles": [
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 6/Secretaria.java",
-    "POO/Cursada/TP3/Codigos Gabi/Secretaria.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 1/LaboratorioMain.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 1/Laboratorio.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 1/gestionStock.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 1/producto.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 2",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 1",
-    "POO/Entrega TPs/Reader_es_install.exe",
-    "POO/Entrega TPs/Sin confirmar 246660.crdownload",
-    "POO/Cursada/TP3/Codigos Luisma/Ejercicio2/README.TXT",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/RegistroCivil.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Mujer.class",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Hombre.class",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Mujer.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Hombre.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/persona.class",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/persona.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 8/Paciente.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 8/Localidad.java",
     "Sin título 1.md",
     "Sin título 1.canvas",
     "2026-08-03.md",
