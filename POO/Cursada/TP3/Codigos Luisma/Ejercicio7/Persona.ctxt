@@ -1,0 +1,34 @@
+#BlueJ class context
+#Sat Aug 29 20:43:43 ART 2026
+comment0.target=Persona
+comment0.text=\r\n Representa una Persona mediante sus datos Personales b\u00E1sicos.\r\n\r\n @version 1.0\r\n
+comment1.params=dni nombre apellido anioNacimiento
+comment1.target=Persona(int, java.lang.String, java.lang.String, int)
+comment1.text=\r\n Crea una Persona con sus datos Personales.\r\n\r\n @param dni Documento Nacional de Identidad de la Persona\r\n @param nombre nombre de la Persona\r\n @param apellido apellido de la Persona\r\n @param anioNacimiento a\u00F1o de nacimiento de la Persona\r\n
+comment10.target=int edad()
+comment10.text=\r\n Calcula la edad aproximada de la Persona a partir del a\u00F1o actual.\r\n\r\n @return edad de la Persona en a\u00F1os\r\n
+comment11.target=java.lang.String nomYAp()
+comment11.text=\r\n Construye el nombre completo de la Persona.\r\n\r\n @return nombre y apellido separados por un espacio\r\n
+comment12.target=void mostrar()
+comment12.text=\r\n Muestra por consola los datos principales de la Persona.\r\n
+comment2.params=dni
+comment2.target=void setDNI(int)
+comment2.text=\r\n Asigna el Documento Nacional de Identidad de la Persona.\r\n\r\n @param dni Documento Nacional de Identidad que se asignar\u00E1\r\n
+comment3.params=nombre
+comment3.target=void setNombre(java.lang.String)
+comment3.text=\r\n Asigna el nombre de la Persona.\r\n\r\n @param nombre nombre que se asignar\u00E1\r\n
+comment4.params=apellido
+comment4.target=void setApellido(java.lang.String)
+comment4.text=\r\n Asigna el apellido de la Persona.\r\n\r\n @param apellido apellido que se asignar\u00E1\r\n
+comment5.params=anioNacimiento
+comment5.target=void setAnioNacimiento(int)
+comment5.text=\r\n Asigna el a\u00F1o de nacimiento de la Persona.\r\n\r\n @param anioNacimiento a\u00F1o de nacimiento que se asignar\u00E1\r\n
+comment6.target=int getDNI()
+comment6.text=\r\n Obtiene el Documento Nacional de Identidad de la Persona.\r\n\r\n @return Documento Nacional de Identidad de la Persona\r\n
+comment7.target=java.lang.String getNombre()
+comment7.text=\r\n Obtiene el nombre de la Persona.\r\n\r\n @return nombre de la Persona\r\n
+comment8.target=java.lang.String getApellido()
+comment8.text=\r\n Obtiene el apellido de la Persona.\r\n\r\n @return apellido de la Persona\r\n
+comment9.target=int getAnioNacimiento()
+comment9.text=\r\n Obtiene el a\u00F1o de nacimiento de la Persona.\r\n\r\n @return a\u00F1o de nacimiento de la Persona\r\n
+numComments=13
