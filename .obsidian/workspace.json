@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2a216f03d0133a89",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "8a583850c142dec5",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -204,19 +204,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8a583850c142dec5",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/RegistroCivil.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Mujer.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Hombre.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Mujer.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10/Hombre.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 10",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/persona.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/persona.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 8/Paciente.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 8/Localidad.java",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Secretaria.java",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Secretaria.ctxt",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Secretaria.class",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/README.TXT",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/package.bluej",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Escuela.java",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Escuela.ctxt",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Escuela.class",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Docente.java",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Docente.ctxt",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio6/Docente.class",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/link.svg",
+    "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/copy.svg",
     "Sin título 1.md",
     "Sin título 1.canvas",
     "2026-08-03.md",
@@ -256,8 +258,6 @@
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41 2.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41 3.jpg",
     "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40 3.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40 2.jpg",
     "Sin título 2.canvas"
   ]
 }
