@@ -32,12 +32,22 @@ public class Empleado {
      * @param anioIngreso  Año de ingreso del empleado
      */
     public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, Calendar p_fechaIngreso) {
-
         setCuil(cuil);
         setApellido(apellido);
         setNombre(nombre);
         setSueldoBasico(sueldoBasico);
         setFechaIngreso(p_fechaIngreso);
+    }
+
+    /**
+     * Constructor con año de ingreso como entero.
+     */
+    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, int p_anioIngreso) {
+        setCuil(cuil);
+        setApellido(apellido);
+        setNombre(nombre);
+        setSueldoBasico(sueldoBasico);
+        setAnioIngreso(p_anioIngreso);
     }
 
     /**
@@ -56,6 +66,17 @@ public class Empleado {
      */
     private void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    /**
+     * Establece el año de ingreso a partir de un entero.
+     * 
+     * @param p_anioIngreso Año de ingreso a asignar
+     */
+    private void setAnioIngreso(int p_anioIngreso) {
+        Calendar auxFecha = new GregorianCalendar();
+        auxFecha.set(Calendar.YEAR, p_anioIngreso);
+        this.setFechaIngreso(auxFecha);
     }
 
     /**
@@ -137,6 +158,15 @@ public class Empleado {
      */
     public Calendar getFechaIngreso() {
         return fechaIngreso;
+    }
+
+    /**
+     * Obtiene el año de ingreso del empleado.
+     * 
+     * @return Año de ingreso del empleado
+     */
+    public int getAnioIngreso() {
+        return getFechaIngreso().get(Calendar.YEAR);
     }
 
     /**
