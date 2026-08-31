@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
@@ -8,7 +9,7 @@ import java.util.GregorianCalendar;
  * @author Usuario
  * @version 1.0
  */
-public class empleado {
+public class Empleado {
     /** CUIL del empleado */
     private long cuil;
     /** Apellido del empleado */
@@ -18,25 +19,25 @@ public class empleado {
     /** Sueldo básico mensual del empleado */
     private double sueldoBasico;
     /** Año de ingreso del empleado a la empresa */
-    private int anioIngreso;
+    private Calendar fechaIngreso;
 
     /**
      * Constructor de la clase empleado.
      * Inicializa un empleado con sus datos personales y salariales.
      * 
-     * @param cuil CUIL del empleado
-     * @param apellido Apellido del empleado
-     * @param nombre Nombre del empleado
+     * @param cuil         CUIL del empleado
+     * @param apellido     Apellido del empleado
+     * @param nombre       Nombre del empleado
      * @param sueldoBasico Sueldo básico mensual del empleado
-     * @param anioIngreso Año de ingreso del empleado
+     * @param anioIngreso  Año de ingreso del empleado
      */
-    public empleado(long cuil, String apellido, String nombre, double sueldoBasico, int anioIngreso){
+    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, Calendar p_fechaIngreso) {
 
         setCuil(cuil);
         setApellido(apellido);
         setNombre(nombre);
         setSueldoBasico(sueldoBasico);
-        setAnioIngreso(anioIngreso);
+        setFechaIngreso(p_fechaIngreso);
     }
 
     /**
@@ -44,7 +45,7 @@ public class empleado {
      * 
      * @param cuil CUIL a asignar
      */
-    private void setCuil(long cuil){
+    private void setCuil(long cuil) {
         this.cuil = cuil;
     }
 
@@ -53,7 +54,7 @@ public class empleado {
      * 
      * @param apellido Apellido a asignar
      */
-    private void setApellido(String apellido){
+    private void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
@@ -62,7 +63,7 @@ public class empleado {
      * 
      * @param nombre Nombre a asignar
      */
-    private void setNombre(String nombre){
+    private void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
@@ -71,7 +72,7 @@ public class empleado {
      * 
      * @param sueldoBasico Sueldo básico a asignar
      */
-    private void setSueldoBasico(double sueldoBasico){
+    private void setSueldoBasico(double sueldoBasico) {
         this.sueldoBasico = sueldoBasico;
     }
 
@@ -80,8 +81,8 @@ public class empleado {
      * 
      * @param anioIngreso Año de ingreso a asignar
      */
-    private void setAnioIngreso(int anioIngreso){
-        this.anioIngreso = anioIngreso;
+    private void setFechaIngreso(Calendar p_fechaIngreso) {
+        this.fechaIngreso = p_fechaIngreso;
     }
 
     /**
@@ -89,7 +90,7 @@ public class empleado {
      * 
      * @return Cadena con formato "nombre apellido"
      */
-    public String nombreYApellido(){
+    public String nombreYApellido() {
         return nombre + " " + apellido;
     }
 
@@ -98,7 +99,7 @@ public class empleado {
      * 
      * @return CUIL del empleado
      */
-    public long getCuil(){
+    public long getCuil() {
         return cuil;
     }
 
@@ -107,7 +108,7 @@ public class empleado {
      * 
      * @return Apellido del empleado
      */
-    public String getApellido(){
+    public String getApellido() {
         return apellido;
     }
 
@@ -116,7 +117,7 @@ public class empleado {
      * 
      * @return Nombre del empleado
      */
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -125,7 +126,7 @@ public class empleado {
      * 
      * @return Sueldo básico mensual
      */
-    public double getSueldoBasico(){
+    public double getSueldoBasico() {
         return sueldoBasico;
     }
 
@@ -134,8 +135,8 @@ public class empleado {
      * 
      * @return Año de ingreso del empleado
      */
-    public int getAnioIngreso(){
-        return anioIngreso;
+    public Calendar getFechaIngreso() {
+        return fechaIngreso;
     }
 
     /**
@@ -143,7 +144,7 @@ public class empleado {
      * 
      * @return Cadena con nombre y apellido
      */
-    public String getNomYApe(){
+    public String getNomYApe() {
         return getNombre() + " " + getApellido();
     }
 
@@ -153,9 +154,9 @@ public class empleado {
      * 
      * @return Años de antigüedad del empleado
      */
-    public int antiguedad(){
+    public int antiguedad() {
         GregorianCalendar fechaActual = new GregorianCalendar();
-        return fechaActual.get(GregorianCalendar.YEAR) - getAnioIngreso();
+        return fechaActual.get(GregorianCalendar.YEAR) - getFechaIngreso().get(Calendar.YEAR);
     }
 
     /**
@@ -165,9 +166,8 @@ public class empleado {
      * @return Monto de descuento a aplicar
      */
     private double descuento() {
-    return getSueldoBasico() * 0.02 + 1500;
-}
-
+        return getSueldoBasico() * 0.02 + 1500;
+    }
 
     /**
      * Calcula el adicional por antigüedad del empleado.
@@ -178,15 +178,15 @@ public class empleado {
      * 
      * @return Monto del adicional por antigüedad
      */
-    private double adicional(){
+    private double adicional() {
 
-    if (antiguedad() >= 10) {
-        return getSueldoBasico() * 0.06;
-    } else if (antiguedad() >= 2) {
-        return getSueldoBasico() * 0.04;
-    } else {
-        return getSueldoBasico() * 0.02;
-    }
+        if (antiguedad() >= 10) {
+            return getSueldoBasico() * 0.06;
+        } else if (antiguedad() >= 2) {
+            return getSueldoBasico() * 0.04;
+        } else {
+            return getSueldoBasico() * 0.02;
+        }
 
     }
 
@@ -197,7 +197,7 @@ public class empleado {
      * 
      * @return Sueldo neto del empleado
      */
-    public double sueldoNeto(){
+    public double sueldoNeto() {
         return getSueldoBasico() + adicional() - descuento();
     }
 
@@ -205,7 +205,7 @@ public class empleado {
      * Muestra en la consola los datos completos del empleado.
      * Imprime nombre, apellido, CUIL, antigüedad y sueldo neto.
      */
-    public void mostrar(){
+    public void mostrar() {
         System.out.println("Nombre y Apellido: " + getNomYApe());
         System.out.println("CUIL: " + getCuil() + "Antiguedad: " + antiguedad() + " años de servicio");
         System.out.println("Sueldo Neto: $" + sueldoNeto());
@@ -215,8 +215,21 @@ public class empleado {
      * Muestra en la consola los datos del empleado en una sola línea.
      * Formato: CUIL apellido, nombre sueldo_neto
      */
-    public void mostrarLinea(){
-        System.out.println("" + getCuil() + " " + getApellido() +", " + " " + getNombre() + " " + " $" + sueldoNeto());
+    public void mostrarLinea() {
+        System.out.println("" + getCuil() + " " + getApellido() + ", " + " " + getNombre() + " " + " $" + sueldoNeto());
+    }
+
+    public boolean esAniversario() {
+
+        Calendar hoy = new GregorianCalendar();
+
+        if (hoy.get(Calendar.MONTH) == getFechaIngreso().get(Calendar.MONTH)
+                && hoy.get(Calendar.DAY_OF_MONTH) == getFechaIngreso().get(Calendar.DAY_OF_MONTH)) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
 }
