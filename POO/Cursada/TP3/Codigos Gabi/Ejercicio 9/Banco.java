@@ -3,7 +3,8 @@ import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /**
- * Clase ejecutable que gestiona un menú bancario para operar con Caja de Ahorro y Cuenta Corriente de un titular.
+ * Clase ejecutable que gestiona un menú bancario para operar con Caja de Ahorro
+ * y Cuenta Corriente de un titular.
  * 
  * @author Gabi
  * @version 1.0
@@ -11,7 +12,8 @@ import java.util.Scanner;
 public class Banco {
 
     /**
-     * Método principal que inicializa el titular, las cuentas bancarias y ejecuta el menú interactivo.
+     * Método principal que inicializa el titular, las cuentas bancarias y ejecuta
+     * el menú interactivo.
      * 
      * @param args argumentos de línea de comandos
      */
@@ -45,7 +47,6 @@ public class Banco {
 
         Persona titular = new Persona(dni, nombre, apellido, fechaNacimiento);
 
-        // Envío de mensaje de felicitaciones si es el cumpleaños del titular
         if (titular.esCumpleaños()) {
             System.out.println("\n**************************************************");
             System.out.println(" ¡El Banco le desea un muy Feliz Cumpleaños, " + titular.nomYAp() + "!");

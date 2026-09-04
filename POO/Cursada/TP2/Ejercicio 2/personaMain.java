@@ -1,5 +1,4 @@
 
-
 /**
  * Ejecuta una demostración del uso de la clase {@link persona}.
  *
@@ -12,7 +11,7 @@ public class personaMain {
      * @param args argumentos recibidos desde la línea de comandos
      */
     public static void main(String[] args) {
-       persona persona1 = new persona(46773971, "luis", "bonessi", 2005);
-        p.mostrar();
+        Persona persona1 = new Persona(46773971, "luis", "bonessi", 2005);
+        persona1.mostrar();
     }
 }

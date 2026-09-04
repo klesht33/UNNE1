@@ -1,5 +1,6 @@
 /**
- * Representa a una mujer con sus datos personales, estado civil y relación de matrimonio con un Hombre.
+ * Representa a una mujer con sus datos personales, estado civil y relación de
+ * matrimonio con un Hombre.
  * 
  * @author Gabi
  * @version 1.0
@@ -20,9 +21,9 @@ public class Mujer {
     /**
      * Constructor que inicializa a la mujer como soltera.
      * 
-     * @param p_nombre nombre de la mujer
+     * @param p_nombre   nombre de la mujer
      * @param p_apellido apellido de la mujer
-     * @param p_edad edad de la mujer
+     * @param p_edad     edad de la mujer
      */
     public Mujer(String p_nombre, String p_apellido, int p_edad) {
         this.setNombre(p_nombre);
@@ -34,17 +35,19 @@ public class Mujer {
     /**
      * Constructor que inicializa a la mujer casada con un esposo.
      * 
-     * @param p_nombre nombre de la mujer
+     * @param p_nombre   nombre de la mujer
      * @param p_apellido apellido de la mujer
-     * @param p_edad edad de la mujer
-     * @param p_esposo objeto Hombre que es su esposo
+     * @param p_edad     edad de la mujer
+     * @param p_esposo   objeto Hombre que es su esposo
      */
     public Mujer(String p_nombre, String p_apellido, int p_edad, Hombre p_esposo) {
         this.setNombre(p_nombre);
         this.setApellido(p_apellido);
         this.setEdad(p_edad);
-        this.setEstadoCivil("Casada");
-        this.setEsposo(p_esposo);
+        this.setEstadoCivil("Soltera");
+        if (p_esposo != null) {
+            this.casarseCon(p_esposo);
+        }
     }
 
     /**
@@ -55,7 +58,7 @@ public class Mujer {
     private void setApellido(String p_apellido) {
         this.apellido = p_apellido;
     }
-    
+
     /**
      * Asigna la edad de la mujer.
      * 
@@ -73,7 +76,7 @@ public class Mujer {
     private void setEstadoCivil(String p_estadoCivil) {
         this.estadoCivil = p_estadoCivil;
     }
-    
+
     /**
      * Asigna el nombre de la mujer.
      * 
@@ -138,20 +141,58 @@ public class Mujer {
     }
 
     /**
-     * Contrae matrimonio con el hombre indicado, actualizando estado civil a "Casada".
+     * Contrae matrimonio con el hombre indicado, actualizando el estado civil a
+     * "Casada"
+     * y actualizando automáticamente el estado civil del hombre a "Casado".
+     * No permite el matrimonio si alguno de los dos ya está casado con otra
+     * persona.
      * 
      * @param p_hombre hombre con el que se casa
      */
     public void casarseCon(Hombre p_hombre) {
+        if (p_hombre == null) {
+            System.out.println("No se puede contraer matrimonio: la persona no existe.");
+            return;
+        }
+
+        if (this.getEsposo() == p_hombre && p_hombre.getEsposa() == this) {
+            return;
+        }
+
+        // Verificación de si la mujer ya está casada con otra persona
+        if (("Casada".equalsIgnoreCase(this.getEstadoCivil()) || this.getEsposo() != null)
+                && this.getEsposo() != p_hombre) {
+            System.out.println("No se puede realizar el matrimonio: " + this.getNombre() + " " + this.getApellido()
+                    + " ya está casada.");
+            return;
+        }
+
+        // Verificación de si el hombre ya está casado con otra persona
+        if (("Casado".equalsIgnoreCase(p_hombre.getEstadoCivil()) || p_hombre.getEsposa() != null)
+                && p_hombre.getEsposa() != this) {
+            System.out.println("No se puede realizar el matrimonio: " + p_hombre.getNombre() + " "
+                    + p_hombre.getApellido() + " ya está casado.");
+            return;
+        }
+
         this.setEsposo(p_hombre);
         this.setEstadoCivil("Casada");
+
+        // Se sincroniza el matrimonio en el objeto par (Hombre)
+        if (p_hombre.getEsposa() != this) {
+            p_hombre.casarseCon(this);
+        }
     }
 
     /**
      * Muestra por consola la información de matrimonio de la mujer con su esposo.
      */
     public void casadaCon() {
-        System.out.println(this.datos() + " está casada con " + this.getEsposo().datos());
+        if (this.getEsposo() != null) {
+            System.out.println(this.datos() + " está casada con " + this.getEsposo().datos());
+        } else {
+            System.out.println(this.datos() + " no está casada.");
+        }
     }
 
     /**
@@ -171,11 +212,23 @@ public class Mujer {
     }
 
     /**
-     * Realiza el divorcio, cambiando el estado civil a "Divorciada" y desvinculando al esposo.
+     * Realiza el divorcio, cambiando el estado civil a "Divorciada", desvinculando
+     * al esposo,
+     * y actualizando automáticamente el estado del esposo a "Divorciado".
      */
     public void divorcio() {
-        this.setEstadoCivil("Divorciada");
-        this.setEsposo(null); 
+        if (this.getEsposo() != null) {
+            Hombre exEsposo = this.getEsposo();
+            this.setEsposo(null);
+            this.setEstadoCivil("Divorciada");
+            if (exEsposo.getEsposa() == this) {
+                exEsposo.divorcio();
+            }
+        } else if ("Casada".equalsIgnoreCase(this.getEstadoCivil())) {
+            this.setEstadoCivil("Divorciada");
+        } else if ("Soltera".equalsIgnoreCase(this.getEstadoCivil())) {
+            System.out.println(this.getNombre() + " es soltero/a, no puede divorciarse.");
+        }
     }
 
 }

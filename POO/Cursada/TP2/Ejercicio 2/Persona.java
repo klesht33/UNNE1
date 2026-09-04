@@ -19,7 +19,8 @@ public class Persona {
     private Calendar fechaNacimiento;
 
     /**
-     * Constructor que crea una persona recibiendo el año de nacimiento (mantiene protocolo anterior).
+     * Constructor que crea una persona recibiendo el año de nacimiento (mantiene
+     * protocolo anterior).
      *
      * @param p_dni      Documento Nacional de Identidad
      * @param p_nombre   Nombre de la persona
@@ -76,7 +77,8 @@ public class Persona {
     }
 
     /**
-     * Asigna el año de nacimiento estableciendo la fecha al 1 de enero de dicho año.
+     * Asigna el año de nacimiento estableciendo la fecha al 1 de enero de dicho
+     * año.
      * 
      * @param p_anio año de nacimiento
      */
@@ -159,8 +161,8 @@ public class Persona {
         int edad = anioHoy - anioNac;
 
         if (hoy.get(Calendar.MONTH) < this.getFechaNacimiento().get(Calendar.MONTH) ||
-            (hoy.get(Calendar.MONTH) == this.getFechaNacimiento().get(Calendar.MONTH) &&
-             hoy.get(Calendar.DAY_OF_MONTH) < this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH))) {
+                (hoy.get(Calendar.MONTH) == this.getFechaNacimiento().get(Calendar.MONTH) &&
+                        hoy.get(Calendar.DAY_OF_MONTH) < this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH))) {
             edad--;
         }
 
@@ -202,7 +204,7 @@ public class Persona {
     public boolean esCumpleaños() {
         Calendar hoy = new GregorianCalendar();
         return (hoy.get(Calendar.MONTH) == this.getFechaNacimiento().get(Calendar.MONTH)) &&
-               (hoy.get(Calendar.DAY_OF_MONTH) == this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH));
+                (hoy.get(Calendar.DAY_OF_MONTH) == this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH));
     }
 
     /**

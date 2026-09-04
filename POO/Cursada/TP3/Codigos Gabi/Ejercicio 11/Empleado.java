@@ -31,22 +31,22 @@ public class Empleado {
      * @param sueldoBasico Sueldo básico mensual del empleado
      * @param anioIngreso  Año de ingreso del empleado
      */
-    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, Calendar p_fechaIngreso) {
-        setCuil(cuil);
-        setApellido(apellido);
-        setNombre(nombre);
-        setSueldoBasico(sueldoBasico);
+    public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_sueldoBasico, Calendar p_fechaIngreso) {
+        setCuil(p_cuil);
+        setApellido(p_apellido);
+        setNombre(p_nombre);
+        setSueldoBasico(p_sueldoBasico);
         setFechaIngreso(p_fechaIngreso);
     }
 
     /**
      * Constructor con año de ingreso como entero.
      */
-    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, int p_anioIngreso) {
-        setCuil(cuil);
-        setApellido(apellido);
-        setNombre(nombre);
-        setSueldoBasico(sueldoBasico);
+    public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_sueldoBasico, int p_anioIngreso) {
+        setCuil(p_cuil);
+        setApellido(p_apellido);
+        setNombre(p_nombre);
+        setSueldoBasico(p_sueldoBasico);
         setAnioIngreso(p_anioIngreso);
     }
 
@@ -55,8 +55,8 @@ public class Empleado {
      * 
      * @param cuil CUIL a asignar
      */
-    private void setCuil(long cuil) {
-        this.cuil = cuil;
+    private void setCuil(long p_cuil) {
+        this.cuil = p_cuil;
     }
 
     /**
@@ -64,8 +64,8 @@ public class Empleado {
      * 
      * @param apellido Apellido a asignar
      */
-    private void setApellido(String apellido) {
-        this.apellido = apellido;
+    private void setApellido(String p_apellido) {
+        this.apellido = p_apellido;
     }
 
     /**
@@ -84,8 +84,8 @@ public class Empleado {
      * 
      * @param nombre Nombre a asignar
      */
-    private void setNombre(String nombre) {
-        this.nombre = nombre;
+    private void setNombre(String p_nombre) {
+        this.nombre = p_nombre;
     }
 
     /**
@@ -93,8 +93,8 @@ public class Empleado {
      * 
      * @param sueldoBasico Sueldo básico a asignar
      */
-    private void setSueldoBasico(double sueldoBasico) {
-        this.sueldoBasico = sueldoBasico;
+    private void setSueldoBasico(double p_sueldoBasico) {
+        this.sueldoBasico = p_sueldoBasico;
     }
 
     /**
