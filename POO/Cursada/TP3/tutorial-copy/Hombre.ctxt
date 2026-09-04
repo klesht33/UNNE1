@@ -1,0 +1,36 @@
+#BlueJ class context
+#Thu Sep 03 22:55:21 ART 2026
+comment0.target=Hombre
+comment0.text=\r\n Representa a un hombre con sus datos personales, estado civil y relaci\u00F3n de matrimonio con una Mujer.\r\n \r\n @author Gabi\r\n @version 1.0\r\n
+comment1.params=p_nombre p_apellido p_edad
+comment1.target=Hombre(java.lang.String, java.lang.String, int)
+comment1.text=\r\n Constructor que inicializa al hombre como soltero.\r\n \r\n @param p_nombre nombre del hombre\r\n @param p_apellido apellido del hombre\r\n @param p_edad edad del hombre\r\n
+comment10.target=void casadoCon()
+comment10.text=\r\n Muestra por consola la informaci\u00F3n de matrimonio del hombre con su esposa.\r\n
+comment11.target=java.lang.String datos()
+comment11.text=\r\n Retorna una cadena con nombre, apellido y edad del hombre.\r\n \r\n @return cadena con el formato "Nombre Apellido de X a\u00F1os"\r\n
+comment12.target=void mostrarEstadoCivil()
+comment12.text=\r\n Muestra por pantalla los datos del hombre junto con su estado civil.\r\n
+comment13.target=void divorcio()
+comment13.text=\r\n Realiza el divorcio, cambiando el estado civil a "Divorciado", desvinculando a la esposa,\r\n y actualizando autom\u00E1ticamente el estado de la esposa a "Divorciada".\r\n
+comment2.params=p_apellido
+comment2.target=void setApellido(java.lang.String)
+comment2.text=\r\n Asigna el apellido del hombre.\r\n \r\n @param p_apellido apellido a asignar\r\n
+comment3.params=p_edad
+comment3.target=void setEdad(int)
+comment3.text=\r\n Asigna la edad del hombre.\r\n \r\n @param p_edad edad a asignar\r\n
+comment4.params=p_estadoCivil
+comment4.target=void setEstadoCivil(java.lang.String)
+comment4.text=\r\n Asigna el estado civil del hombre.\r\n \r\n @param p_estadoCivil estado civil a asignar\r\n
+comment5.params=p_nombre
+comment5.target=void setNombre(java.lang.String)
+comment5.text=\r\n Asigna el nombre del hombre.\r\n \r\n @param p_nombre nombre a asignar\r\n
+comment6.target=java.lang.String getApellido()
+comment6.text=\r\n Obtiene el apellido del hombre.\r\n \r\n @return apellido del hombre\r\n
+comment7.target=int getEdad()
+comment7.text=\r\n Obtiene la edad del hombre.\r\n \r\n @return edad del hombre\r\n
+comment8.target=java.lang.String getEstadoCivil()
+comment8.text=\r\n Obtiene el estado civil del hombre.\r\n \r\n @return estado civil\r\n
+comment9.target=java.lang.String getNombre()
+comment9.text=\r\n Obtiene el nombre del hombre.\r\n \r\n @return nombre del hombre\r\n
+numComments=14

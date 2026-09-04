@@ -1,0 +1,8 @@
+#BlueJ class context
+#Thu Sep 03 22:55:23 ART 2026
+comment0.target=RegistroCivil
+comment0.text=\r\n Clase ejecutable para gestionar el Registro Civil, permitiendo ingresar los datos\r\n de un hombre y una mujer por teclado mediante Scanner y probar las operaciones\r\n de matrimonio, divorcio y consulta de estados civiles.\r\n \r\n @author Gabi\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment1.text=\r\n M\u00E9todo principal ejecutable.\r\n \r\n @param args argumentos de l\u00EDnea de comandos\r\n
+numComments=2
