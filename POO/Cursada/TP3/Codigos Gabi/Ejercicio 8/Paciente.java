@@ -129,10 +129,13 @@ public class Paciente {
      * Muestra por pantalla los datos filiatorios del paciente y su localidad de nacimiento.
      */
     public void mostrarDatosPantalla() {
-
         System.out.println("Paciente: " + getNombre() + " Historia Clinica: " + getHistoriaClinica() + " Domicilio: "
                 + getDomicilio());
-        getLocalidadNacido().mostrar();
+        if (getLocalidadNacido() != null) {
+            getLocalidadNacido().mostrar();
+        } else {
+            System.out.println("Localidad de nacimiento: Sin asignar");
+        }
     }
 
     /**
@@ -141,8 +144,10 @@ public class Paciente {
      * @return cadena con el resumen de datos del paciente
      */
     public String cadenaDeDatos() {
+        String vive = (getLocalidadVive() != null) ? getLocalidadVive().getNombreVive() : "Sin localidad de residencia";
+        String nacido = (getLocalidadNacido() != null) ? getLocalidadNacido().getNombre() : "Sin localidad de nacimiento";
         return "" + getNombre() + "......... " + getHistoriaClinica() + "......... " + getDomicilio() + "- "
-                + getLocalidadVive().getNombreVive() + " - " + getLocalidadNacido().getNombre();
+                + vive + " - " + nacido;
     }
 
 }

@@ -74,8 +74,7 @@ public class Empleado {
      * @param p_anioIngreso Año de ingreso a asignar
      */
     private void setAnioIngreso(int p_anioIngreso) {
-        Calendar auxFecha = new GregorianCalendar();
-        auxFecha.set(Calendar.YEAR, p_anioIngreso);
+        Calendar auxFecha = new GregorianCalendar(p_anioIngreso, Calendar.JANUARY, 1);
         this.setFechaIngreso(auxFecha);
     }
 
@@ -94,7 +93,7 @@ public class Empleado {
      * @param sueldoBasico Sueldo básico a asignar
      */
     private void setSueldoBasico(double p_sueldoBasico) {
-        this.sueldoBasico = p_sueldoBasico;
+        this.sueldoBasico = Math.max(0.0, p_sueldoBasico);
     }
 
     /**
@@ -185,8 +184,15 @@ public class Empleado {
      * @return Años de antigüedad del empleado
      */
     public int antiguedad() {
-        GregorianCalendar fechaActual = new GregorianCalendar();
-        return fechaActual.get(GregorianCalendar.YEAR) - getFechaIngreso().get(Calendar.YEAR);
+        if (getFechaIngreso() == null) {
+            return 0;
+        }
+        Calendar fechaActual = new GregorianCalendar();
+        int antiguedad = fechaActual.get(Calendar.YEAR) - getFechaIngreso().get(Calendar.YEAR);
+        if (fechaActual.get(Calendar.DAY_OF_YEAR) < getFechaIngreso().get(Calendar.DAY_OF_YEAR)) {
+            antiguedad--;
+        }
+        return Math.max(0, antiguedad);
     }
 
     /**
@@ -237,7 +243,7 @@ public class Empleado {
      */
     public void mostrar() {
         System.out.println("Nombre y Apellido: " + getNomYApe());
-        System.out.println("CUIL: " + getCuil() + "Antiguedad: " + antiguedad() + " años de servicio");
+        System.out.println("CUIL: " + getCuil() + " Antiguedad: " + antiguedad() + " años de servicio");
         System.out.println("Sueldo Neto: $" + sueldoNeto());
     }
 
@@ -250,7 +256,9 @@ public class Empleado {
     }
 
     public boolean esAniversario() {
-
+        if (getFechaIngreso() == null) {
+            return false;
+        }
         Calendar hoy = new GregorianCalendar();
 
         if (hoy.get(Calendar.MONTH) == getFechaIngreso().get(Calendar.MONTH)

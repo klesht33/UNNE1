@@ -113,12 +113,16 @@ public class CajaDeAhorro{
     }
     
     /**
-     * Realiza un depósito sumando el importe al saldo actual.
+     * Realiza un depósito sumando el importe al saldo actual si el importe es positivo.
      * 
      * @param pImporte importe a depositar
      */
     public void depositar(double pImporte){
-         this.saldo += pImporte;
+        if (pImporte > 0) {
+            this.saldo += pImporte;
+        } else {
+            System.out.println("El importe a depositar debe ser mayor a cero.");
+        }
     }
     
     /**
@@ -126,17 +130,20 @@ public class CajaDeAhorro{
      * 
      * @param pImporte importe a extraer
      */
-    public void extraer (double pImporte){
+    public void extraer(double pImporte){
+        if (pImporte <= 0) {
+            System.out.println("El importe a extraer debe ser mayor a cero.");
+            return;
+        }
+
         if(this.puedeExtraer(pImporte)){
             extraccion(pImporte);
-        }
-        else {
+        } else {
             String motivo = (pImporte > this.getSaldo())
             ? "No puede extraer mas que el saldo!"
             : "No tiene mas extracciones disponibles!";
             
             System.out.println(motivo);
-            
         }
     }
     
@@ -147,7 +154,7 @@ public class CajaDeAhorro{
      * @return true si es posible extraer, false de lo contrario
      */
     private boolean puedeExtraer(double pImporte){
-        return (pImporte <= getSaldo()) && (getExtraccionesPosibles() >= 1 );
+        return (pImporte > 0) && (pImporte <= getSaldo()) && (getExtraccionesPosibles() >= 1 );
     }
     
     /**
@@ -155,9 +162,9 @@ public class CajaDeAhorro{
      * 
      * @param pImporte importe a descontar
      */
-    private void extraccion (double pImporte){
-        this.setSaldo (this.getSaldo() - pImporte);
-        this.setExtraccionesPosibles (this.getExtraccionesPosibles() - 1);
+    private void extraccion(double pImporte){
+        this.setSaldo(this.getSaldo() - pImporte);
+        this.setExtraccionesPosibles(this.getExtraccionesPosibles() - 1);
     }
     
     /**
@@ -165,8 +172,9 @@ public class CajaDeAhorro{
      */
     public void mostrar(){
         System.out.println("-Caja de Ahorro-");
-        System.out.println("Nro.Cuenta: "+ getNroCuenta() + "- Saldo:" + getSaldo());
-        System.out.println("Titular: "+ getTitular().nomYAp());
+        System.out.println("Nro.Cuenta: "+ getNroCuenta() + " - Saldo: $" + getSaldo());
+        String nombreTitular = (getTitular() != null) ? getTitular().nomYAp() : "Sin titular";
+        System.out.println("Titular: "+ nombreTitular);
         System.out.println("Extracciones posibles: "+ getExtraccionesPosibles());
     }
 }

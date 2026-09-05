@@ -44,7 +44,7 @@ public class Docente {
      * @param asignacionFamiliar monto de asignación a asignar
      */
     public void setAsignacionFamiliar(double asignacionFamiliar) {
-        this.asignacionFamiliar = asignacionFamiliar;
+        this.asignacionFamiliar = Math.max(0.0, asignacionFamiliar);
     }
 
     /**
@@ -62,7 +62,7 @@ public class Docente {
      * @param p_sueldoBasico sueldo básico a asignar
      */
     public void setSueldoBasico(double p_sueldoBasico) {
-        this.sueldoBasico = p_sueldoBasico;
+        this.sueldoBasico = Math.max(0.0, p_sueldoBasico);
     }
 
     /**

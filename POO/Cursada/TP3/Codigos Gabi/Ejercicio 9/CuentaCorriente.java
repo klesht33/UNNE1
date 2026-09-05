@@ -111,22 +111,26 @@ public class CuentaCorriente{
     }
     
     /**
-     * Evalúa si es posible realizar una extracción considerando saldo más descubierto.
+     * Evalúa si es posible realizar una extracción considerando saldo más descubierto y que el importe sea positivo.
      * 
      * @param pImporte importe a extraer
-     * @return true si los fondos más el descubierto son suficientes, false de lo contrario
+     * @return true si los fondos más el descubierto son suficientes y el importe es mayor a cero, false de lo contrario
      */
     private boolean puedeExtraer(double pImporte){
-        return pImporte <= (getSaldo() + getLimiteDescubierto());
+        return (pImporte > 0) && (pImporte <= (getSaldo() + getLimiteDescubierto()));
     }
     
     /**
-     * Realiza un depósito sumando el importe al saldo actual.
+     * Realiza un depósito sumando el importe al saldo actual si el importe es positivo.
      * 
      * @param pImporte importe a depositar
      */
     public void depositar(double pImporte){
-         this.saldo += pImporte;
+        if (pImporte > 0) {
+            this.saldo += pImporte;
+        } else {
+            System.out.println("El importe a depositar debe ser mayor a cero.");
+        }
     }
     
     /**
@@ -135,11 +139,17 @@ public class CuentaCorriente{
      * @param pImporte importe a extraer
      */
     public void extraer(double pImporte){
+        if (pImporte <= 0) {
+            System.out.println("El importe a extraer debe ser mayor a cero.");
+            return;
+        }
+
         if(puedeExtraer(pImporte)){
             extraccion(pImporte);
-        }
-        else{
-            System.out.println("No se pudo realizar la extraccion porque el importe supera el saldo mas el limite descubierto ");
+        } else {
+            System.out.println("No se pudo realizar la extraccion: el importe ($" + pImporte 
+                    + ") supera el saldo disponible ($" + getSaldo() 
+                    + ") mas el limite descubierto ($" + getLimiteDescubierto() + ").");
         }
     }
     
@@ -148,7 +158,7 @@ public class CuentaCorriente{
      * 
      * @param pImporte importe a descontar
      */
-    private void extraccion (double pImporte){
+    private void extraccion(double pImporte){
         this.saldo -= pImporte;
     }
     
@@ -157,8 +167,9 @@ public class CuentaCorriente{
      */
     public void mostrar(){
         System.out.println("-Cuenta Corriente-");
-        System.out.println("Nro.Cuenta: "+ getNroCuenta() + "- Saldo:" + getSaldo());
-        System.out.println("Titular: "+ getTitular().nomYAp());
-        System.out.println("Descubierto: "+ getLimiteDescubierto());
+        System.out.println("Nro.Cuenta: "+ getNroCuenta() + " - Saldo: $" + getSaldo());
+        String nombreTitular = (getTitular() != null) ? getTitular().nomYAp() : "Sin titular";
+        System.out.println("Titular: "+ nombreTitular);
+        System.out.println("Descubierto: $"+ getLimiteDescubierto());
     }
 }   

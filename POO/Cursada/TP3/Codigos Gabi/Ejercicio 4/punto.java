@@ -5,7 +5,7 @@
  * @author Gabi
  * @version 1.0
  */
-public class punto {
+public class Punto {
 
     /**
      * Coordenada X del punto.
@@ -21,7 +21,7 @@ public class punto {
      * Constructor por defecto.
      * Crea un punto en las coordenadas (0, 0).
      */
-    public punto() {
+    public Punto() {
         this.x = 0;
         this.y = 0;
     }
@@ -32,7 +32,7 @@ public class punto {
      * @param p_x coordenada X del punto
      * @param p_y coordenada Y del punto
      */
-    public punto(double p_x, double p_y) {
+    public Punto(double p_x, double p_y) {
         this.x = p_x;
         this.y = p_y;
     }
@@ -72,20 +72,24 @@ public class punto {
     public double getY() {
         return this.y;
     }
-    
+
     /**
-     * Calcula la distancia euclídea entre este punto y otro punto recibido por parámetro.
+     * Calcula la distancia euclídea entre este punto y otro punto recibido por
+     * parámetro.
      * 
      * @param ptoDistante punto hacia el cual se calcula la distancia
      * @return distancia euclídea entre ambos puntos
      */
-    public double distanciaA(punto ptoDistante){
+    public double distanciaA(Punto ptoDistante) {
+        if (ptoDistante == null) {
+            return 0.0;
+        }
         // Diferencia en X
         double dx = ptoDistante.getX() - this.getX();
         // Diferencia en Y
         double dy = ptoDistante.getY() - this.getY();
         // Pitagoras
-        return Math.sqrt (dx * dx + dy * dy);
+        return Math.sqrt(dx * dx + dy * dy);
     }
 
     /**

@@ -1,5 +1,6 @@
 /**
- * Representa un círculo geométrico caracterizado por su radio y su punto central.
+ * Representa un círculo geométrico caracterizado por su radio y su punto
+ * central.
  * 
  * @author Gabi
  * @version 1.0
@@ -8,25 +9,26 @@ public class Circulo {
     /** Radio del círculo. */
     private double radio;
     /** Punto central del círculo. */
-    private punto centro;
+    private Punto centro;
 
     /**
      * Constructor que crea un círculo especificando su radio y su centro.
      * 
-     * @param p_radio radio del círculo
+     * @param p_radio  radio del círculo
      * @param p_centro punto central del círculo
      */
-    public Circulo(double p_radio, punto p_centro){
+    public Circulo(double p_radio, Punto p_centro) {
         this.setRadio(p_radio);
-        this.setCentro(p_centro);
+        this.setCentro(p_centro != null ? p_centro : new Punto(0, 0));
     }
 
     /**
-     * Constructor por defecto que inicializa el círculo con radio 0 y centro en el origen (0,0).
+     * Constructor por defecto que inicializa el círculo con radio 0 y centro en el
+     * origen (0,0).
      */
-    public Circulo(){
+    public Circulo() {
         this.radio = 0;
-        this.centro = new punto(0, 0);
+        this.centro = new Punto(0, 0);
     }
 
     /**
@@ -34,8 +36,8 @@ public class Circulo {
      * 
      * @param p_centro centro a asignar
      */
-    private void setCentro(punto p_centro){
-        this.centro = p_centro;
+    private void setCentro(Punto p_centro) {
+        this.centro = p_centro != null ? p_centro : new Punto(0, 0);
     }
 
     /**
@@ -43,16 +45,16 @@ public class Circulo {
      * 
      * @param p_radio radio a asignar
      */
-    private void setRadio(double p_radio){
-        this.radio = p_radio;
+    private void setRadio(double p_radio) {
+        this.radio = Math.max(0.0, p_radio);
     }
-    
+
     /**
      * Obtiene el punto central del círculo.
      * 
      * @return punto central
      */
-    public punto getCentro(){
+    public Punto getCentro() {
         return this.centro;
     }
 
@@ -61,26 +63,31 @@ public class Circulo {
      * 
      * @return radio del círculo
      */
-    public double getRadio(){
+    public double getRadio() {
         return this.radio;
     }
 
     /**
-     * Desplaza la posición del círculo sumando los desplazamientos a las coordenadas del centro.
+     * Desplaza la posición del círculo sumando los desplazamientos a las
+     * coordenadas del centro.
      * 
      * @param p_dx desplazamiento en el eje X
      * @param p_dy desplazamiento en el eje Y
      */
-    public void desplazar(double p_dx, double p_dy){
-        centro.desplazar(p_dx, p_dy);
+    public void desplazar(double p_dx, double p_dy) {
+        if (this.centro != null) {
+            this.centro.desplazar(p_dx, p_dy);
+        }
     }
 
     /**
-     * Muestra por consola las características del círculo (centro, radio, superficie y perímetro).
+     * Muestra por consola las características del círculo (centro, radio,
+     * superficie y perímetro).
      */
-    public void caracteristicas(){
+    public void caracteristicas() {
         System.out.println("******Circulo*****");
-        System.out.println("Centro: " + centro.coordenadas() + " - Radio: " + getRadio());
+        String coord = (this.centro != null) ? this.centro.coordenadas() : "(0.0, 0.0)";
+        System.out.println("Centro: " + coord + " - Radio: " + getRadio());
         System.out.println("Superficie: " + superficie() + " - Perimetro: " + perimetro());
     }
 
@@ -89,17 +96,21 @@ public class Circulo {
      * 
      * @return superficie del círculo
      */
-    public double superficie(){
+    public double superficie() {
         return Math.PI * Math.pow(getRadio(), 2);
     }
 
     /**
-     * Calcula la distancia entre el centro de este círculo y el centro de otro círculo.
+     * Calcula la distancia entre el centro de este círculo y el centro de otro
+     * círculo.
      * 
      * @param otroCirculo círculo hasta el cual se calcula la distancia
      * @return distancia entre los centros de ambos círculos
      */
-    public double distanciaA(Circulo otroCirculo){
+    public double distanciaA(Circulo otroCirculo) {
+        if (otroCirculo == null || otroCirculo.getCentro() == null || this.getCentro() == null) {
+            return 0.0;
+        }
         return this.getCentro().distanciaA(otroCirculo.getCentro());
     }
 
@@ -109,8 +120,11 @@ public class Circulo {
      * @param otroCirculo círculo con el cual comparar
      * @return el círculo con mayor superficie
      */
-    public Circulo elMayor(Circulo otroCirculo){
-        if(this.superficie() > otroCirculo.superficie()){
+    public Circulo elMayor(Circulo otroCirculo) {
+        if (otroCirculo == null) {
+            return this;
+        }
+        if (this.superficie() >= otroCirculo.superficie()) {
             return this;
         } else {
             return otroCirculo;
@@ -122,7 +136,7 @@ public class Circulo {
      * 
      * @return perímetro del círculo
      */
-    public double perimetro(){
+    public double perimetro() {
         return 2 * Math.PI * getRadio();
     }
 }

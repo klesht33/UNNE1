@@ -65,6 +65,10 @@ public class Hospital {
      */
     public void consultaDatosFilatorios(Paciente p_paciente) {
         System.out.println("Hospital: " + getNombreHospital() + " Director: " + getNombreDirector());
-        p_paciente.mostrarDatosPantalla();
+        if (p_paciente != null) {
+            p_paciente.mostrarDatosPantalla();
+        } else {
+            System.out.println("Paciente no especificado.");
+        }
     }
 }

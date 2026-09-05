@@ -20,9 +20,10 @@ public class CuentaBancaria {
      * @param p_nroCuenta número de la cuenta
      * @param p_titular   persona titular de la cuenta
      */
-    public CuentaBancaria(int p_nroCuenta, persona p_titular) {
+     public CuentaBancaria(int p_nroCuenta, persona p_titular) {
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
+        this.setSaldo(0.0);
     }
 
     /**
@@ -35,7 +36,7 @@ public class CuentaBancaria {
     public CuentaBancaria(int p_nroCuenta, persona p_titular, double p_saldo) {
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
-        this.setSaldo(p_saldo);
+        this.setSaldo(p_saldo >= 0 ? p_saldo : 0.0);
     }
 
     /**
@@ -93,29 +94,47 @@ public class CuentaBancaria {
     }
 
     /**
-     * Realiza un depósito sumando el importe al saldo actual.
+     * Realiza un depósito sumando el importe al saldo actual si es positivo.
+     * 
+     * @param p_importe monto a depositar
+     * @return saldo actualizado luego del depósito
+     */
+    public double depositar(double p_importe) {
+        if (p_importe > 0) {
+            this.saldo += p_importe;
+        } else {
+            System.out.println("El importe a depositar debe ser mayor a 0.");
+        }
+        return this.saldo;
+    }
+
+    /**
+     * Alias de depositar para mantener compatibilidad.
      * 
      * @param p_importe monto a depositar
      * @return saldo actualizado luego del depósito
      */
     public double despositar(double p_importe) {
-        this.saldo += p_importe;
-        return this.saldo;
+        return this.depositar(p_importe);
     }
 
     /**
-     * Realiza una extracción restando el importe al saldo si hay fondos
-     * suficientes.
+     * Realiza una extracción restando el importe al saldo si hay fondos suficientes y el importe es positivo.
      * 
      * @param p_importe monto a extraer
      * @return saldo actualizado luego de la operación
      */
     public double extraer(double p_importe) {
+        if (p_importe <= 0) {
+            System.out.println("El importe a extraer debe ser mayor a 0.");
+            return this.saldo;
+        }
+
         if (p_importe <= this.saldo) {
             this.saldo -= p_importe;
             return this.saldo;
         } else {
-            System.out.println("Saldo insuficiente");
+            System.out.println("Saldo insuficiente para extraer $" + p_importe + ". Saldo actual: $" + this.saldo);
             return this.saldo;
         }
     }
@@ -125,7 +144,11 @@ public class CuentaBancaria {
      */
     public void mostrar() {
         System.out.println("- Cuenta Bancaria -");
-        System.out.println("Titular: " + this.titular.getNombre() + " ( " + this.titular.edad() + " )");
+        if (this.titular != null) {
+            System.out.println("Titular: " + this.titular.getNombre() + " ( " + this.titular.edad() + " )");
+        } else {
+            System.out.println("Titular: Sin asignar");
+        }
         System.out.println("Saldo: " + this.saldo);
     }
 
@@ -135,6 +158,7 @@ public class CuentaBancaria {
      * @return cadena con el formato "nroCuenta - Apellido y Nombre - saldo"
      */
     public String toString() {
-        return this.nroCuenta + " - " + this.titular.nomYAp() + " - " + this.saldo;
+        String datosTitular = (this.titular != null) ? this.titular.nomYAp() : "Sin titular";
+        return this.nroCuenta + " - " + datosTitular + " - " + this.saldo;
     }
 }

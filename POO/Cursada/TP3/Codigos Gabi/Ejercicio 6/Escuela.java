@@ -32,6 +32,10 @@ public class Escuela {
      * @param p_docente docente del cual se emite el recibo
      */
     public void imprimirRecibo(Docente p_docente){
+        if (p_docente == null) {
+            System.out.println("No se puede emitir el recibo: el docente no existe.");
+            return;
+        }
         System.out.println("Escuela: " + getNombre() + 
                            " Domicilio: " + getDomicilio() + 
                            " Director: " + getDirector());

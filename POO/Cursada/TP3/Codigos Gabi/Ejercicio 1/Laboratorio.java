@@ -3,8 +3,8 @@
  *
  * @version 1.0
  */
-public class Laboratorio{
-    
+public class Laboratorio {
+
     /** Nombre del Laboratorio. */
     private String nombre;
     /** Domicilio del Laboratorio. */
@@ -17,33 +17,36 @@ public class Laboratorio{
     private int diaEntrega;
 
     /**
-     * Crea un Laboratorio con sus condiciones comerciales y datos de contacto.
+     * Crea un Laboratorio con su nombre, datos de contacto y condiciones
+     * comerciales.
      *
-     * @param domicilio domicilio del Laboratorio
-     * @param telefono teléfono de contacto del Laboratorio
+     * @param nombre       nombre del Laboratorio
+     * @param domicilio    domicilio del Laboratorio
+     * @param telefono     teléfono de contacto del Laboratorio
      * @param compraMinima importe mínimo de compra
-     * @param diaEntrega día programado para la entrega
+     * @param diaEntrega   día programado para la entrega
      */
-    public Laboratorio(String domicilio, String telefono, int compraMinima, int diaEntrega){
-
+    public Laboratorio(String nombre, String domicilio, String telefono, int compraMinima, int diaEntrega) {
+        setNombre(nombre);
         setDomicilio(domicilio);
         setTelefono(telefono);
         setCompraMinima(compraMinima);
         setDiaEntrega(diaEntrega);
-
     }
 
     /**
      * Crea un Laboratorio con su nombre y datos de contacto.
      *
-     * @param nombre nombre del Laboratorio
+     * @param nombre    nombre del Laboratorio
      * @param domicilio domicilio del Laboratorio
-     * @param telefono teléfono de contacto del Laboratorio
+     * @param telefono  teléfono de contacto del Laboratorio
      */
-    public Laboratorio(String nombre, String domicilio, String telefono){
+    public Laboratorio(String nombre, String domicilio, String telefono) {
         setNombre(nombre);
         setDomicilio(domicilio);
         setTelefono(telefono);
+        setCompraMinima(0);
+        setDiaEntrega(0);
     }
 
     /**
@@ -51,17 +54,17 @@ public class Laboratorio{
      *
      * @param compraMinima nuevo importe mínimo de compra
      */
-    public void nuevaCompraMinima(int compraMinima){
+    public void nuevaCompraMinima(int compraMinima) {
         this.compraMinima = compraMinima;
 
     }
-    
+
     /**
      * Actualiza el día programado para la entrega.
      *
      * @param diaEntrega nuevo día de entrega
      */
-    public void nuevoDiaEntrega(int diaEntrega){
+    public void nuevoDiaEntrega(int diaEntrega) {
         this.diaEntrega = diaEntrega;
 
     }
@@ -69,7 +72,7 @@ public class Laboratorio{
     /**
      * Muestra por consola los datos principales del Laboratorio.
      */
-    public void mostrar(){
+    public void mostrar() {
 
         System.out.println("Laboratorio: " + getNombre());
         System.out.println("Domicilio: " + getDomicilio() + " Telefono: " + getTelefono());
@@ -81,7 +84,7 @@ public class Laboratorio{
      *
      * @param nombre nombre que se asignará
      */
-    private void setNombre(String nombre){
+    private void setNombre(String nombre) {
 
         this.nombre = nombre;
     }
@@ -91,7 +94,7 @@ public class Laboratorio{
      *
      * @param domicilio domicilio que se asignará
      */
-    private void setDomicilio(String domicilio){
+    private void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
 
@@ -100,7 +103,7 @@ public class Laboratorio{
      *
      * @param telefono teléfono que se asignará
      */
-    private void setTelefono(String telefono){
+    private void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -109,7 +112,7 @@ public class Laboratorio{
      *
      * @param compraMinima importe mínimo que se asignará
      */
-    private void setCompraMinima(int compraMinima){
+    private void setCompraMinima(int compraMinima) {
         this.compraMinima = compraMinima;
     }
 
@@ -118,7 +121,7 @@ public class Laboratorio{
      *
      * @param diaEntrega día de entrega que se asignará
      */
-    private void setDiaEntrega(int diaEntrega){
+    private void setDiaEntrega(int diaEntrega) {
         this.diaEntrega = diaEntrega;
     }
 
@@ -127,7 +130,7 @@ public class Laboratorio{
      *
      * @return nombre del Laboratorio
      */
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -136,7 +139,7 @@ public class Laboratorio{
      *
      * @return domicilio del Laboratorio
      */
-    public String getDomicilio(){
+    public String getDomicilio() {
         return domicilio;
     }
 
@@ -145,7 +148,7 @@ public class Laboratorio{
      *
      * @return teléfono del Laboratorio
      */
-    public String getTelefono(){
+    public String getTelefono() {
         return telefono;
     }
 
@@ -154,18 +157,17 @@ public class Laboratorio{
      *
      * @return importe mínimo de compra
      */
-    public int getCompraMinima(){
+    public int getCompraMinima() {
         return compraMinima;
     }
-    
+
     /**
      * Obtiene el día programado para la entrega.
      *
      * @return día de entrega
      */
-    public int getDiaEntrega(){
+    public int getDiaEntrega() {
         return diaEntrega;
     }
 
 }
-
