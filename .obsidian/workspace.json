@@ -11,10 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -206,6 +206,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "POO/Entrega TPs/TP3_ArandaGabrielAngel.zip",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Rectangulo.class",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Punto.class",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/CreaFigura.class",
@@ -216,7 +217,6 @@
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/Punto.java",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/CuentaCorriente.class",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/Persona.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/CajaDeAhorro.class",
     "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/link.svg",
     "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/copy.svg",
     "Sin título 1.md",
