@@ -84,11 +84,11 @@ public class Punto {
         if (ptoDistante == null) {
             return 0.0;
         }
-        // Diferencia en X
+
         double dx = ptoDistante.getX() - this.getX();
-        // Diferencia en Y
+
         double dy = ptoDistante.getY() - this.getY();
-        // Pitagoras
+
         return Math.sqrt(dx * dx + dy * dy);
     }
 

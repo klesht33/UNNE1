@@ -22,14 +22,6 @@ public class Rectangulo {
      * @param pAncho  ancho del rectángulo
      * @param pAlto   alto del rectángulo
      */
-    /**
-     * Constructor que inicializa el rectángulo con un punto de origen, ancho y
-     * alto.
-     * 
-     * @param pOrigen punto de origen del rectángulo
-     * @param pAncho  ancho del rectángulo
-     * @param pAlto   alto del rectángulo
-     */
     public Rectangulo(Punto pOrigen, double pAncho, double pAlto) {
         this.setAncho(pAncho);
         this.setAlto(pAlto);

@@ -1,6 +1,11 @@
 {
     "java.project.sourcePaths": [
+<<<<<<< HEAD
         "Cursada/TP4/Ejercicio 2",
         "Cursada/TP4/Ejercicio 4"
+=======
+        "Cursada/TP3/Codigos Gabi/EJercicio 5",
+        "Cursada/TP3/Codigos Gabi/ejercitio 6 tp 4"
+>>>>>>> origin/main
     ]
 }

@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -76,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e97773935a6cc1a7",
@@ -206,17 +211,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "POO/Cursada/TP3/Codigos Gabi/ejercitio 6 tp 4/GestionComercio.java",
+    "POO/Cursada/TP3/Codigos Gabi/ejercitio 6 tp 4/Empleado.java",
+    "POO/Cursada/TP3/Codigos Gabi/ejercitio 6 tp 4/Comercio.java",
+    "POO/Cursada/TP3/Codigos Gabi/ejercitio 6 tp 4",
+    "POO/Cursada/TP3/Codigos Gabi/TP-3.pdf",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12/EmpleadoConJefe.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12/Ejecutable.java",
+    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12",
     "POO/Entrega TPs/TP3_ArandaGabrielAngel.zip",
     "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Rectangulo.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Punto.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/CreaFigura.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/CreaFigura.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/Punto.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/Circulo.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Punto.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/Punto.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/CuentaCorriente.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 9/Persona.class",
     "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/link.svg",
     "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/copy.svg",
     "Sin título 1.md",
