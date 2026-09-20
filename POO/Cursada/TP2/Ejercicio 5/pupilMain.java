@@ -12,17 +12,17 @@ public class pupilMain {
      *
      * @param args argumentos de linea de comandos; no se utilizan.
      */
-    public static void main(String[] args){
-        
+    public static void main(String[] args) {
+
         int lu = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el LU del alumno:"));
         String nombre = JOptionPane.showInputDialog("Ingrese el nombre del alumno: ");
         String apellido = JOptionPane.showInputDialog("Ingrese el apellido del alumno: ");
         double nota1 = Double.parseDouble(JOptionPane.showInputDialog(":Ingrese la nota 1:"));
         double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la nota 2: "));
 
-        pupil alumno = new pupil(lu, nombre, apellido, nota1, nota2);
+        Alumno alumno = new Alumno(lu, nombre, apellido, nota1, nota2);
         alumno.mostrar();
-    
+
     }
-    
+
 }
