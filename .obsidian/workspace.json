@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -206,19 +210,27 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "POO/Cursada/TP3/Codigos Gabi/EJercicio 5/Persona.java",
-    "POO/Cursada/TP3/Codigos Gabi/EJercicio 5/GestionBancaria.java",
-    "POO/Cursada/TP3/Codigos Gabi/TP-3.pdf",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12/EmpleadoConJefe.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12/Ejecutable.java",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio12",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Rectangulo.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/Punto.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 4/CreaFigura.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/CreaFigura.class",
-    "POO/Cursada/TP3/Codigos Gabi/Ejercicio 3/Punto.class",
-    "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/link.svg",
-    "POO/Cursada/TP3/Codigos Luisma/Ejercicio7/doc/copy.svg",
+    "conflict-files-obsidian-git.md",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej2_encadenamiento.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej8_asignacion_indexada.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej7_asignacion_contigua.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej5_6_rutas.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej1_fat_flow.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej1_encadenamiento.png",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3/gengar_original.png",
+    "Sistemas Operativos/Cursada/TPS/[SO]TP4_Resuelto.docx",
+    "Sistemas Operativos/Cursada/TPS/[SO]TP3_Resuelto.docx",
+    "Sistemas Operativos/Cursada/TPS/WhatsApp Image 2026-09-17 at 6.57.46 PM.jpeg",
+    "Sistemas Operativos/Cursada/TPS/WhatsApp Image 2026-09-17 at 6.57.46 PM (2).jpeg",
+    "Sistemas Operativos/Cursada/TPS/WhatsApp Image 2026-09-17 at 6.57.46 PM (1).jpeg",
+    "Sistemas Operativos/Cursada/TPS/TP4_Resuelto.pdf",
+    "Sistemas Operativos/Cursada/TPS/TP3_Sistemas_Operativos_transcripcion.docx",
+    "Sistemas Operativos/Cursada/TPS/TP3_Resuelto.pdf",
+    "Sistemas Operativos/Cursada/TPS/TP3_Resuelto.docx",
+    "Sistemas Operativos/Cursada/TPS/TP1_Resuelto.pdf",
+    "Sistemas Operativos/Cursada/TPS/Resolución del Práctico Nº 1 SISTEMAS.docx",
+    "Sistemas Operativos/Cursada/TPS/graficos_tp3",
+    "Sistemas Operativos/Cursada/TPS/generate_all_graphics.py",
     "Sin título 1.md",
     "Sin título 1.canvas",
     "2026-08-03.md",
@@ -250,14 +262,6 @@
     "Sistemas Operativos/Sin título.canvas",
     "POO/POO.canvas",
     "POO/UNNE/Sin título.canvas",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42 3.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-42 2.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41 4.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41 2.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-41 3.jpg",
-    "Base de Datos/Descargado/Parciales/1er parcial/2025/Modelo-repaso/PHOTO-2025-09-15-21-40-40.jpg",
     "Sin título 2.canvas"
   ]
 }

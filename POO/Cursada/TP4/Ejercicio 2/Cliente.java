@@ -4,7 +4,7 @@
  *
  * @version 1.0
  */
-public class cliente {
+public class Cliente {
 
     /** Número de Documento Nacional de Identidad del cliente. */
     private int nroDNI;
@@ -23,7 +23,7 @@ public class cliente {
      * @param nombre nombre del cliente
      * @param importe saldo inicial del cliente
      */
-    public cliente(int dni, String apellido, String nombre, double importe){
+    public Cliente(int dni, String apellido, String nombre, double importe){
         setNroDNI(dni);
         setApellido(apellido);
         setNombre(nombre);
@@ -107,7 +107,7 @@ public class cliente {
      * @return nombre y apellido del cliente
      */
     public String nomYAp(){
-        return getNombre() + "" + getApellido();
+        return getNombre() + " " + getApellido();
     }
 
     /**
