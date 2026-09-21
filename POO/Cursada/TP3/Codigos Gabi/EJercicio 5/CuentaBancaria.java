@@ -10,7 +10,7 @@ public class CuentaBancaria {
     /** Número identificador de la cuenta bancaria. */
     private int nroCuenta;
     /** Titular de la cuenta bancaria. */
-    private persona titular;
+    private Persona titular;
     /** Saldo actual de la cuenta bancaria. */
     private double saldo;
 
@@ -20,7 +20,7 @@ public class CuentaBancaria {
      * @param p_nroCuenta número de la cuenta
      * @param p_titular   persona titular de la cuenta
      */
-     public CuentaBancaria(int p_nroCuenta, persona p_titular) {
+    public CuentaBancaria(int p_nroCuenta, Persona p_titular) {
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
         this.setSaldo(0.0);
@@ -33,7 +33,7 @@ public class CuentaBancaria {
      * @param p_titular   persona titular de la cuenta
      * @param p_saldo     saldo inicial de la cuenta
      */
-    public CuentaBancaria(int p_nroCuenta, persona p_titular, double p_saldo) {
+    public CuentaBancaria(int p_nroCuenta, Persona p_titular, double p_saldo) {
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
         this.setSaldo(p_saldo >= 0 ? p_saldo : 0.0);
@@ -53,7 +53,7 @@ public class CuentaBancaria {
      * 
      * @param titular persona titular a asignar
      */
-    public void setTitular(persona titular) {
+    public void setTitular(Persona titular) {
         this.titular = titular;
     }
 
@@ -80,7 +80,7 @@ public class CuentaBancaria {
      * 
      * @return objeto persona titular
      */
-    public persona getTitular() {
+    public Persona getTitular() {
         return titular;
     }
 
@@ -119,7 +119,8 @@ public class CuentaBancaria {
     }
 
     /**
-     * Realiza una extracción restando el importe al saldo si hay fondos suficientes y el importe es positivo.
+     * Realiza una extracción restando el importe al saldo si hay fondos suficientes
+     * y el importe es positivo.
      * 
      * @param p_importe monto a extraer
      * @return saldo actualizado luego de la operación

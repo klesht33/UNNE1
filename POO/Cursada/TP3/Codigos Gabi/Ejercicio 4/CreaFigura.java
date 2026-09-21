@@ -17,8 +17,6 @@ public class CreaFigura {
     public static void main(String[] args) {
         Random unNumero = new Random();
 
-        // Creamos el primer rectangulo
-
         Punto origen1 = new Punto(0, 0);
         double ancho1 = unNumero.nextDouble() * 100.0;
         double alto1 = unNumero.nextDouble() * 100.0;

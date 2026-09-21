@@ -30,12 +30,7 @@ public class PuntoMain {
         p.mostrar();
         System.out.println("" + p.coordenadas());
 
-        // agregamos otro punto por parametro
-
         Punto p2 = new Punto(3, 4);
-
-        // calculamos la distancia entre p1 (el mismo) hasta p2 (el otro punto que es
-        // por parametro)
 
         System.out.println("Distancia entre p1 y p2:" + p.distanciaA(p2));
     }

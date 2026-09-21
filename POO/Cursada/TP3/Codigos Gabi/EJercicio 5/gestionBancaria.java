@@ -1,15 +1,17 @@
 import javax.swing.JOptionPane;
 
 /**
- * Clase ejecutable para interactuar con el usuario y gestionar operaciones de CuentaBancaria.
+ * Clase ejecutable para interactuar con el usuario y gestionar operaciones de
+ * CuentaBancaria.
  * 
  * @author Gabi
  * @version 1.0
  */
-public class gestionBancaria {
+public class GestionBancaria {
 
    /**
-    * Método principal que solicita datos de titular y cuenta, y realiza depósitos y extracciones.
+    * Método principal que solicita datos de titular y cuenta, y realiza depósitos
+    * y extracciones.
     * 
     * @param args argumentos de línea de comandos
     */
@@ -19,7 +21,7 @@ public class gestionBancaria {
       String nombre = JOptionPane.showInputDialog("Ingrese el nombre del titular:");
       String apellido = JOptionPane.showInputDialog("Ingrese el apellido del titular:");
       int anioNacimiento = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el anio de nacimiento del titular:"));
-      persona titular = new persona(dni, nombre, apellido, anioNacimiento);
+      Persona titular = new Persona(dni, nombre, apellido, anioNacimiento);
       double saldo = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el saldo inicial:"));
 
       CuentaBancaria cuenta = new CuentaBancaria(nroCuenta, titular, saldo);
@@ -29,7 +31,7 @@ public class gestionBancaria {
       cuenta.mostrar();
       cuenta.extraer(importeExtraer);
       cuenta.mostrar();
-      
+
       System.out.println("" + cuenta.toString());
    }
 
