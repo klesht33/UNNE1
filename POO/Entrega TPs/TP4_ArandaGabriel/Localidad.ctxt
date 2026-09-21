@@ -1,0 +1,28 @@
+#BlueJ class context
+#Mon Sep 21 00:32:34 ART 2026
+comment0.target=Localidad
+comment0.text=\r\n Representa una localidad geogr\u00E1fica con su nombre y provincia.\r\n \r\n @author Gabi\r\n @version 1.0\r\n
+comment1.params=p_nombre p_provincia p_nombreVive
+comment1.target=Localidad(java.lang.String, java.lang.String, java.lang.String)
+comment1.text=\r\n Constructor que inicializa los atributos de la localidad.\r\n \r\n @param p_nombre     nombre de la localidad\r\n @param p_provincia  provincia a la que pertenece\r\n @param p_nombreVive nombre descriptivo de residencia\r\n
+comment2.params=p_nombre p_provincia
+comment2.target=Localidad(java.lang.String, java.lang.String)
+comment2.text=\r\n Constructor con dos par\u00E1metros (nombre y provincia).\r\n \r\n @param p_nombre    nombre de la localidad\r\n @param p_provincia provincia a la que pertenece\r\n
+comment3.params=p_nombreVive
+comment3.target=void setNombreVive(java.lang.String)
+comment3.text=\r\n Asigna el nombre descriptivo de residencia.\r\n \r\n @param p_nombreVive nombre descriptivo a asignar\r\n
+comment4.target=java.lang.String getNombreVive()
+comment4.text=\r\n Obtiene el nombre descriptivo de residencia.\r\n \r\n @return nombre descriptivo\r\n
+comment5.params=p_nombre
+comment5.target=void setNombre(java.lang.String)
+comment5.text=\r\n Asigna el nombre de la localidad.\r\n \r\n @param p_nombre nombre de localidad a asignar\r\n
+comment6.params=p_provincia
+comment6.target=void setProvincia(java.lang.String)
+comment6.text=\r\n Asigna la provincia de la localidad.\r\n \r\n @param p_provincia provincia a asignar\r\n
+comment7.target=java.lang.String getNombre()
+comment7.text=\r\n Obtiene el nombre de la localidad.\r\n \r\n @return nombre de la localidad\r\n
+comment8.target=java.lang.String getProvincia()
+comment8.text=\r\n Obtiene la provincia de la localidad.\r\n \r\n @return provincia de la localidad\r\n
+comment9.target=void mostrar()
+comment9.text=\r\n Muestra por consola la localidad y provincia.\r\n
+numComments=10

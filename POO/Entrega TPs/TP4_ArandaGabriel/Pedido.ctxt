@@ -1,0 +1,24 @@
+#BlueJ class context
+#Mon Sep 21 00:32:34 ART 2026
+comment0.target=Pedido
+comment1.params=p_fecha p_cliente p_productos
+comment1.target=Pedido(java.util.Calendar, Cliente, java.util.ArrayList)
+comment10.target=double totalFinanciado()
+comment11.params=p_producto
+comment11.target=boolean quitarProducto(Producto)
+comment12.params=p_producto
+comment12.target=boolean agregarProducto(Producto)
+comment13.target=void mostrarPedido()
+comment2.params=p_fecha p_cliente p_producto
+comment2.target=Pedido(java.util.Calendar, Cliente, Producto)
+comment3.params=p_fecha
+comment3.target=void setFecha(java.util.Calendar)
+comment4.params=p_cliente
+comment4.target=void setCliente(Cliente)
+comment5.params=p_productos
+comment5.target=void setProductos(java.util.ArrayList)
+comment6.target=Cliente getCliente()
+comment7.target=java.util.Calendar getFecha()
+comment8.target=java.util.ArrayList getProductos()
+comment9.target=double totalAlContado()
+numComments=14

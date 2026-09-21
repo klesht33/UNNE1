@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Sep 21 00:32:34 ART 2026
+comment0.target=TomaPedido
+comment0.text=\r\n Clase ejecutable para automatizar y gestionar la toma de pedidos de clientes.\r\n Permite realizar diferentes operaciones\: agregar productos (por\r\n unidad/cantidad),\r\n quitar productos, consultar totales y emitir el detalle completo del pedido.\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+numComments=2

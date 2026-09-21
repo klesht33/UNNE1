@@ -1,0 +1,110 @@
+{
+  "input": "C:\\Users\\cuent\\Documents\\UNNE\\Clon\\POO\\Entrega TPs\\TP3_ArandaGabrielAngel\\TP3_ArandaGabrielAngel\\Informe_TP3.docx",
+  "fonts_by_char_count": {
+    "Arial": 4132
+  },
+  "direct_run_formatting_runs": 30,
+  "direct_paragraph_formatting_paragraphs": 25,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 1,
+      "text": "Informe Trabajo Pr\u00e1ctico N\u00b0 3",
+      "style": "Normal"
+    },
+    {
+      "para_index": 4,
+      "text": "1. Introducci\u00f3n y Objetivos",
+      "style": "Normal"
+    },
+    {
+      "para_index": 7,
+      "text": "2. Fundamentaci\u00f3n Te\u00f3rica del Paradigma de Objetos",
+      "style": "Normal"
+    },
+    {
+      "para_index": 8,
+      "text": "2.1. Evoluci\u00f3n del Paradigma desde TP1 y TP2",
+      "style": "Normal"
+    },
+    {
+      "para_index": 10,
+      "text": "2.2. Conocimiento entre Objetos y Colaboradores",
+      "style": "Normal"
+    },
+    {
+      "para_index": 12,
+      "text": "2.3. Encapsulamiento de Estructura y Estabilidad de Interfaz",
+      "style": "Normal"
+    },
+    {
+      "para_index": 14,
+      "text": "3. An\u00e1lisis de los Ejercicios del TP3",
+      "style": "Normal"
+    },
+    {
+      "para_index": 24,
+      "text": "4. Conclusi\u00f3n",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "Informe Trabajo Pr\u00e1ctico N\u00b0 3",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "Alumno: Aranda Gabriel",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "DNI: 46714612\nProfesores: M\u00f3nica Ringa - Daniela Demchum\nGrupo Laboratorio: 1\nTP: N\u00b0 3\nFecha de entrega: 15/09/2026",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "1. Introducci\u00f3n y Objetivos",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "Este informe es para presentar el desarrollo del TP3 de Programaci\u00f3n Orientada a Objetos. A diferencia de los TP anterio",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "Informe Trabajo Pr\u00e1ctico N\u00b0 3",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "Alumno: ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "Aranda Gabriel",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "run_text": "DNI: 467",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "run_text": "14612",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}
