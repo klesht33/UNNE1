@@ -3,12 +3,7 @@ import java.util.Scanner;
 
 /**
  * Clase ejecutable ArrayDePuntos.
-<<<<<<< HEAD
- * Administra una colección de objetos Punto utilizando el tipo de dato
- * ArrayList
-=======
  * Administra una colección de objetos Punto utilizando el tipo de dato ArrayList
->>>>>>> origin/main
  * sin genéricos (con casting al recuperar elementos), aplicando las pautas
  * de la cátedra para constructores y encapsulamiento.
  * 
@@ -22,12 +17,7 @@ public class ArrayDePuntos {
 
     /**
      * Constructor caso 0 (0..*):
-<<<<<<< HEAD
-     * No recibe elementos iniciales. Crea la colección con this.setPuntos(new
-     * ArrayList()).
-=======
      * No recibe elementos iniciales. Crea la colección con this.setPuntos(new ArrayList()).
->>>>>>> origin/main
      */
     public ArrayDePuntos() {
         this.setPuntos(new ArrayList());
@@ -35,12 +25,7 @@ public class ArrayDePuntos {
 
     /**
      * Constructor caso 1 (1..*):
-<<<<<<< HEAD
-     * Recibe un objeto elemento de la colección -> crea la colección y le adiciona
-     * el objeto.
-=======
      * Recibe un objeto elemento de la colección -> crea la colección y le adiciona el objeto.
->>>>>>> origin/main
      * 
      * @param p_punto punto inicial a agregar a la colección
      */
@@ -147,20 +132,14 @@ public class ArrayDePuntos {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-<<<<<<< HEAD
-=======
         // Instanciación usando el constructor caso 0 (colección vacía)
->>>>>>> origin/main
         ArrayDePuntos contenedor = new ArrayDePuntos();
 
         System.out.println("==================================================");
         System.out.println("  1.2. INGRESO DE PUNTOS AL ARRAYLIST             ");
         System.out.println("==================================================");
 
-<<<<<<< HEAD
-=======
         // 1.2. Agregar como elementos instancias de la clase Punto ingresando por teclado
->>>>>>> origin/main
         for (int i = 0; i < 6; i++) {
             System.out.println("\n--- Punto " + (i + 1) + " ---");
             System.out.print("Ingrese coordenada X: ");
@@ -172,19 +151,13 @@ public class ArrayDePuntos {
             contenedor.agregarPunto(new Punto(x, y));
         }
 
-<<<<<<< HEAD
-=======
         // 1.3. Recorrer el contenedor e imprimir las coordenadas de cada elemento
->>>>>>> origin/main
         System.out.println("\n==================================================");
         System.out.println("  1.3. COORDENADAS DE CADA ELEMENTO DEL ARRAY     ");
         System.out.println("==================================================");
         contenedor.imprimirCoordenadas();
 
-<<<<<<< HEAD
-=======
         // 1.4. Imprimir la distancia de cada 2 elementos consecutivos
->>>>>>> origin/main
         System.out.println("\n==================================================");
         System.out.println("  1.4. DISTANCIAS ENTRE ELEMENTOS CONSECUTIVOS    ");
         System.out.println("==================================================");

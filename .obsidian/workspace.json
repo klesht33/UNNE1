@@ -11,10 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -206,18 +210,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "POO/Cursada/tepee/Codigos Gabi/Ejercicio 1/Punto.java",
+    "POO/Cursada/tepee/Codigos Gabi/Ejercicio 1/ArrayDePuntos.java",
+    "POO/Cursada/tepee/Codigos Gabi/Ejercicio 1",
+    "POO/Cursada/tepee/Codigos Gabi",
+    "POO/Cursada/tepee/TP-4.pdf",
+    "POO/Cursada/tepee",
     "POO/Entrega TPs/TP4_ArandaGabriel.zip",
     "POO/Entrega TPs/TP4_ArandaGabriel/Informe_TP4.docx",
     "POO/Entrega TPs/TP4_ArandaGabriel/Informe_TP4_ArandaGabriel.docx",
     "POO/Entrega TPs/TP4_ArandaGabriel/Informe_TP4_ArandaGabriel.docx.e0f9e7aa-21ce-4bb8-83b9-4ff0d9298c8f.chatgptdownload",
-    "POO/Cursada/Informe_TP4_ArandaGabriel.docx",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/Empresa.java",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/Empresa.ctxt",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/Empresa.class",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/EmpleadoConJefe.java",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/EmpleadoConJefe.ctxt",
-    "POO/Entrega TPs/TP3_ArandaGabrielAngel/TP3_ArandaGabrielAngel/EmpleadoConJefe.class",
-    "conflict-files-obsidian-git.md",
     "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej2_encadenamiento.png",
     "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej8_asignacion_indexada.png",
     "Sistemas Operativos/Cursada/TPS/graficos_tp3/grafico_ej7_asignacion_contigua.png",
