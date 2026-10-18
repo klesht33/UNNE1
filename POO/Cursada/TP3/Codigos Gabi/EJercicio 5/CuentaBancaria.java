@@ -125,7 +125,7 @@ public class CuentaBancaria {
      * @param p_importe monto a extraer
      * @return saldo actualizado luego de la operación
      */
-    public double extraer(double p_importe) {
+    public boolean extraer(double p_importe) {
         if (p_importe <= 0) {
             System.out.println("El importe a extraer debe ser mayor a 0.");
             return this.saldo;

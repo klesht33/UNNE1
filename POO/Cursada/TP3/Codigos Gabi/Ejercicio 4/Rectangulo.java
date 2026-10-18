@@ -156,12 +156,35 @@ public class Rectangulo {
     }
 
     /**
+     * Retorna el nombre de la figura geométrica.
+     * 
+     * @return nombre de la figura
+     */
+    public String nombreFigura() {
+        return "****** Rectangulo ******";
+    }
+
+    /**
      * Muestra por consola las características completas del rectángulo.
      */
-    public void mostrarDatos() {
-        System.out.println("***Rectangulo***");
+    public void caracteristicas() {
+        System.out.println(this.nombreFigura());
         String coord = (this.origen != null) ? this.origen.coordenadas() : "(0.0, 0.0)";
         System.out.println("Origen: " + coord + " - Alto: " + getAlto() + " - Ancho: " + getAncho());
         System.out.println("Superficie: " + superficie() + " - Perimetro: " + perimetro());
+    }
+
+    /**
+     * Alias con tilde para caracteristicas().
+     */
+    public void características() {
+        this.caracteristicas();
+    }
+
+    /**
+     * Muestra por consola las características completas del rectángulo.
+     */
+    public void mostrarDatos() {
+        this.caracteristicas();
     }
 }

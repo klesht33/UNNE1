@@ -41,8 +41,11 @@ public class Empleado {
 
     /**
      * Constructor con año de ingreso como entero.
+     * 
+     * @param j
+     * @param i
      */
-    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, int p_anioIngreso) {
+    public Empleado(long cuil, String apellido, String nombre, double sueldoBasico, int p_anioIngreso, int i, int j) {
         setCuil(cuil);
         setApellido(apellido);
         setNombre(nombre);
