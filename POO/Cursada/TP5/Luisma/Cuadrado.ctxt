@@ -1,0 +1,12 @@
+#BlueJ class context
+#Sun Oct 18 16:22:07 ART 2026
+comment0.target=Cuadrado
+comment0.text=\r\n Representa un cuadrado, que es un caso particular de un rect\u00E1ngulo \r\n donde el ancho y el alto son iguales.\r\n
+comment1.params=p_origen p_lado
+comment1.target=Cuadrado(Punto, double)
+comment1.text=\r\n Constructor que inicializa el cuadrado. \r\n Llama al constructor de Rectangulo pasando el lado como ancho y como alto[cite\: 1].\r\n \r\n @param p_origen punto de origen del cuadrado\r\n @param p_lado   medida de los lados del cuadrado\r\n
+comment2.target=java.lang.String nombreFigura()
+comment2.text=\r\n Redefine el nombre de la figura[cite\: 1].\r\n
+comment3.target=void caracteristicas()
+comment3.text=\r\n Redefine la impresi\u00F3n de caracter\u00EDsticas para mostrar "Lado" en lugar de "Alto" y "Ancho"[cite\: 1].\r\n
+numComments=4

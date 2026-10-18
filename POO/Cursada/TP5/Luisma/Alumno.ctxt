@@ -1,0 +1,25 @@
+#BlueJ class context
+#Tue Oct 13 19:35:47 ART 2026
+comment0.target=Alumno
+comment0.text=\r\n Representa a un alumno, heredando las caracter\u00EDsticas de Persona.\r\n
+comment1.params=p_dni p_nombre p_apellido p_anio p_lu p_nota1 p_nota2
+comment1.target=Alumno(int, java.lang.String, java.lang.String, int, int, double, double)
+comment1.text=\r\n Crea un alumno con sus datos personales, heredados de Persona, y sus dos notas.\r\n
+comment10.target=java.lang.String leyendaAprueba()
+comment10.text=\r\n Devuelve la condicion academica del alumno como texto[cite\: 11].\r\n
+comment11.target=void mostrar()
+comment11.text=\r\n Redefine el m\u00E9todo mostrar() para incluir los datos personales y los del alumno.\r\n
+comment2.params=p_lu
+comment2.target=void setLu(int)
+comment3.params=p_nota1
+comment3.target=void setNota1(double)
+comment4.params=p_nota2
+comment4.target=void setNota2(double)
+comment5.target=int getLu()
+comment6.target=double getNota1()
+comment7.target=double getNota2()
+comment8.target=double promedio()
+comment8.text=\r\n Calcula el promedio aritmetico de las dos calificaciones[cite\: 11].\r\n
+comment9.target=boolean aprueba()
+comment9.text=\r\n Determina si el alumno aprueba segun un promedio minimo de 7,0[cite\: 11].\r\n
+numComments=12

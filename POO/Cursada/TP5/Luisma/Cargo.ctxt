@@ -1,0 +1,12 @@
+#BlueJ class context
+#Tue Oct 13 19:50:30 ART 2026
+comment0.target=Cargo
+comment1.params=p_nombreCargo p_sueldoBasico p_anioIngreso p_horasDocencia
+comment1.target=Cargo(java.lang.String, double, int, int)
+comment2.target=int antiguedad()
+comment3.target=double adicionalXAntiguedad()
+comment4.target=double sueldoDelCargo()
+comment5.target=java.lang.String getNombreCargo()
+comment6.target=int getHorasDeDocencia()
+comment7.target=void mostrarCargo()
+numComments=8

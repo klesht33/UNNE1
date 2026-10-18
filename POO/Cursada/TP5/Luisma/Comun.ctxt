@@ -1,0 +1,12 @@
+#BlueJ class context
+#Sun Oct 18 16:46:03 ART 2026
+comment0.target=Comun
+comment1.params=p_costo p_plus
+comment1.target=Comun(double, double)
+comment2.params=q
+comment2.target=double descuento(int)
+comment3.params=q
+comment3.target=double precio(int)
+comment4.target=java.lang.String tipo()
+comment5.target=java.lang.String toString()
+numComments=6

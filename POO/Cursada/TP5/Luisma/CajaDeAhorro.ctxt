@@ -1,0 +1,18 @@
+#BlueJ class context
+#Sun Oct 18 15:57:19 ART 2026
+comment0.target=CajaDeAhorro
+comment1.params=p_nroCuenta p_titular
+comment1.target=CajaDeAhorro(int, Persona)
+comment2.params=p_nroCuenta p_titular p_saldo
+comment2.target=CajaDeAhorro(int, Persona, double)
+comment3.target=int getExtraccionesPosibles()
+comment4.params=p_extracciones
+comment4.target=void setExtraccionesPosibles(int)
+comment5.params=p_importe
+comment5.target=boolean puedeExtraer(double)
+comment6.params=p_importe
+comment6.target=boolean extraer(double)
+comment7.params=p_importe
+comment7.target=java.lang.String xQNoPuedeExtraer(double)
+comment8.target=void mostrar()
+numComments=9

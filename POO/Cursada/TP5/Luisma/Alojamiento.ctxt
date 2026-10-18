@@ -1,0 +1,19 @@
+#BlueJ class context
+#Sun Oct 18 16:34:57 ART 2026
+comment0.target=Alojamiento
+comment1.params=p_nombre p_precioBase p_diasAlquiler
+comment1.target=Alojamiento(java.lang.String, double, int)
+comment10.params=p_alojamiento
+comment10.target=int contar(java.lang.String)
+comment11.target=void liquidar()
+comment2.target=java.lang.String getNombre()
+comment3.target=double getPrecioBase()
+comment4.target=int getDiasAlquiler()
+comment5.params=p_servicio
+comment5.target=boolean agregarServicio(Servicio)
+comment6.params=p_servicio
+comment6.target=boolean quitarServicio(Servicio)
+comment7.target=void listarServicios()
+comment8.target=double costoServicios()
+comment9.target=double costo()
+numComments=12

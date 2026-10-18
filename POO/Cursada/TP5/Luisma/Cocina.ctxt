@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Oct 18 16:25:00 ART 2026
+comment0.target=Cocina
+comment1.params=p_marca p_precio p_stock p_hornallas p_calorias p_dimensiones
+comment1.target=Cocina(java.lang.String, float, int, int, int, java.lang.String)
+comment2.target=void imprimir()
+comment3.params=p_cuotas p_interes
+comment3.target=float creditoConAdicional(int, float)
+numComments=4

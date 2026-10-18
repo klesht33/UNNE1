@@ -1,0 +1,8 @@
+#BlueJ class context
+#Sun Oct 18 16:12:51 ART 2026
+comment0.target=Banco
+comment0.text=\r\n Clase ejecutable para interactuar con el usuario y gestionar operaciones bancarias.\r\n \r\n @author luisma\r\n @version 1.0\r\n
+comment1.params=pArgs
+comment1.target=void main(java.lang.String[])
+comment1.text=\r\n M\u00E9todo principal que interact\u00FAa con el usuario y gestiona cuentas bancarias.\r\n \r\n @param pArgs argumentos de l\u00EDnea de comandos\r\n
+numComments=2

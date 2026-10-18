@@ -1,0 +1,26 @@
+#BlueJ class context
+#Sun Oct 18 15:56:10 ART 2026
+comment0.target=CuentaBancaria
+comment1.params=p_nroCuenta p_titular
+comment1.target=CuentaBancaria(int, Persona)
+comment10.params=p_importe
+comment10.target=boolean puedeExtraer(double)
+comment11.params=p_importe
+comment11.target=boolean extraer(double)
+comment12.params=p_importe
+comment12.target=java.lang.String xQNoPuedeExtraer(double)
+comment13.target=void mostrar()
+comment2.params=p_nroCuenta p_titular p_saldo
+comment2.target=CuentaBancaria(int, Persona, double)
+comment3.target=int getNroCuenta()
+comment4.params=p_nroCuenta
+comment4.target=void setNroCuenta(int)
+comment5.target=double getSaldo()
+comment6.params=p_saldo
+comment6.target=void setSaldo(double)
+comment7.target=Persona getTitular()
+comment8.params=p_titular
+comment8.target=void setTitular(Persona)
+comment9.params=p_importe
+comment9.target=double depositar(double)
+numComments=14

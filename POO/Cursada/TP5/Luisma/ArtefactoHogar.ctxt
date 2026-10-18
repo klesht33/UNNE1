@@ -1,0 +1,14 @@
+#BlueJ class context
+#Sun Oct 18 16:23:45 ART 2026
+comment0.target=ArtefactoHogar
+comment1.params=p_marca p_precio p_stock
+comment1.target=ArtefactoHogar(java.lang.String, float, int)
+comment2.target=java.lang.String getMarca()
+comment3.target=float getPrecio()
+comment4.target=int getStock()
+comment5.target=void imprimir()
+comment6.params=p_cuotas p_interes
+comment6.target=float cuotaCredito(int, float)
+comment7.params=p_cuotas p_interes
+comment7.target=float creditoConAdicional(int, float)
+numComments=8

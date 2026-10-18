@@ -1,0 +1,10 @@
+#BlueJ class context
+#Sun Oct 18 16:35:28 ART 2026
+comment0.target=Caba\u00F1a
+comment1.params=p_nombre p_precioBase p_diasAlquiler p_nroHabitaciones
+comment1.target=Caba\u00F1a(java.lang.String, double, int, int)
+comment2.target=double costo()
+comment3.params=p_alojamiento
+comment3.target=int contar(java.lang.String)
+comment4.target=void liquidar()
+numComments=5

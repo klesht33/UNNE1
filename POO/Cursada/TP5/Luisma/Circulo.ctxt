@@ -1,0 +1,16 @@
+#BlueJ class context
+#Sun Oct 18 16:22:10 ART 2026
+comment0.target=Circulo
+comment0.text=\r\n Representa un c\u00EDrculo geom\u00E9trico caracterizado por su radio y su punto central.\r\n Ahora hereda de Elipse, siendo un caso especial donde ambos semiejes son iguales.\r\n \r\n @author Gabi\r\n @version 2.0\r\n
+comment1.params=p_radio p_centro
+comment1.target=Circulo(double, Punto)
+comment1.text=\r\n Constructor que crea un c\u00EDrculo especificando su radio y su centro.\r\n \r\n @param p_radio  radio del c\u00EDrculo\r\n @param p_centro punto central del c\u00EDrculo\r\n
+comment2.target=Circulo()
+comment2.text=\r\n Constructor por defecto que inicializa el c\u00EDrculo con radio 0 y centro en el origen (0,0).\r\n
+comment3.target=double getRadio()
+comment3.text=\r\n Obtiene el radio del c\u00EDrculo (equivalente al semieje mayor).\r\n \r\n @return radio del c\u00EDrculo\r\n
+comment4.target=java.lang.String nombreFigura()
+comment4.text=\r\n Sobrescribe el nombre de la figura seg\u00FAn lo solicitado en el diagrama.\r\n
+comment5.target=double perimetro()
+comment5.text=\r\n Calcula el per\u00EDmetro (circunferencia) espec\u00EDfico del c\u00EDrculo.\r\n \r\n @return per\u00EDmetro del c\u00EDrculo\r\n
+numComments=6

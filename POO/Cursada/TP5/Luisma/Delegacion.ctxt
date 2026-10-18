@@ -1,0 +1,17 @@
+#BlueJ class context
+#Sun Oct 18 16:42:51 ART 2026
+comment0.target=Delegacion
+comment1.params=p_nombre p_fechaVisita
+comment1.target=Delegacion(java.lang.String, java.util.Calendar)
+comment2.target=java.lang.String tipoVisitante()
+comment3.params=p_individuo
+comment3.target=void inscribirIndividuo(Individuo)
+comment4.params=p_individuo
+comment4.target=boolean quitarIntegrante(Individuo)
+comment5.target=int cantidadIntegrantes()
+comment6.target=double entrada()
+comment7.target=void mostrar()
+comment8.params=p_fecha p_visitante
+comment8.target=void listarPorFecha(java.util.Calendar, java.lang.String)
+comment9.target=java.util.HashSet listarPersonas()
+numComments=10
