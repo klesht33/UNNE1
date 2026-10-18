@@ -1,0 +1,11 @@
+#BlueJ class context
+#Tue Oct 13 19:53:20 ART 2026
+comment0.target=Facultad
+comment1.params=p_nombre
+comment1.target=Facultad(java.lang.String)
+comment2.params=p_profesor
+comment2.target=void agregarProfesor(Profesor)
+comment3.target=double totalAPagar()
+comment4.target=void nominaProfesores()
+comment5.target=void listarProfesorCargos()
+numComments=6

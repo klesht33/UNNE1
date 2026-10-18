@@ -1,0 +1,14 @@
+#BlueJ class context
+#Sun Oct 18 16:36:00 ART 2026
+comment0.target=Gerencia
+comment1.params=p_nombre
+comment1.target=Gerencia(java.lang.String)
+comment2.params=p_alojamiento
+comment2.target=boolean agregarAlojamiento(Alojamiento)
+comment3.params=p_alojamiento
+comment3.target=boolean quitarAlojamiento(Alojamiento)
+comment4.params=tipoAlojamiento
+comment4.target=int contarAlojamiento(java.lang.String)
+comment5.target=void liquidar()
+comment6.target=void mostrarLiquidacion()
+numComments=7

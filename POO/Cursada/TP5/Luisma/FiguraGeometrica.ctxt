@@ -1,0 +1,14 @@
+#BlueJ class context
+#Sun Oct 18 16:18:57 ART 2026
+comment0.target=FiguraGeometrica
+comment0.text=\r\n Clase abstracta que representa una figura geom\u00E9trica general.\r\n Sirve como superclase para que todas las figuras compartan un origen y\r\n definan su comportamiento para nombre y superficie.\r\n
+comment1.params=p_origen
+comment1.target=FiguraGeometrica(Punto)
+comment2.target=Punto getOrigen()
+comment3.params=p_origen
+comment3.target=void setOrigen(Punto)
+comment4.target=java.lang.String nombreFigura()
+comment5.target=double superficie()
+comment6.target=void mostrarSuperficie()
+comment6.text=\r\n Muestra el nombre de la figura y su superficie calculada.\r\n
+numComments=7

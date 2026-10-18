@@ -1,0 +1,10 @@
+#BlueJ class context
+#Sun Oct 18 16:45:07 ART 2026
+comment0.target=Etiqueta
+comment1.params=p_costo
+comment1.target=Etiqueta(double)
+comment2.params=q
+comment2.target=double precio(int)
+comment3.target=java.lang.String tipo()
+comment4.target=java.lang.String toString()
+numComments=5

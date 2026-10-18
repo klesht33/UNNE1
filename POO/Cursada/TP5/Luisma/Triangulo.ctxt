@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Oct 18 16:21:22 ART 2026
+comment0.target=Triangulo
+comment0.text=\r\n Representa un tri\u00E1ngulo geom\u00E9trico definido por su base, altura y punto de origen.\r\n
+comment1.params=p_origen p_base p_altura
+comment1.target=Triangulo(Punto, double, double)
+comment2.target=java.lang.String nombreFigura()
+comment3.target=double superficie()
+numComments=4

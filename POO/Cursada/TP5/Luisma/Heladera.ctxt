@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Oct 18 16:23:58 ART 2026
+comment0.target=Heladera
+comment1.params=p_marca p_precio p_stock p_pies p_puertas p_compresor
+comment1.target=Heladera(java.lang.String, float, int, int, int, boolean)
+comment2.target=void imprimir()
+comment3.params=p_cuotas p_interes
+comment3.target=float creditoConAdicional(int, float)
+numComments=4

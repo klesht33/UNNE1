@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Oct 18 16:46:16 ART 2026
+comment0.target=Renglon
+comment1.params=p_cantidad p_item
+comment1.target=Renglon(int, Etiqueta)
+comment2.target=int getCantidad()
+comment3.target=double getPrecio()
+comment4.target=void mostrar()
+numComments=5

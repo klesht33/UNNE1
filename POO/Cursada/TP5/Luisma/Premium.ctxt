@@ -1,0 +1,11 @@
+#BlueJ class context
+#Sun Oct 18 16:45:48 ART 2026
+comment0.target=Premium
+comment1.params=p_costo p_colores
+comment1.target=Premium(double, int)
+comment2.target=double plus()
+comment3.params=q
+comment3.target=double precio(int)
+comment4.target=java.lang.String tipo()
+comment5.target=java.lang.String toString()
+numComments=6

@@ -1,0 +1,17 @@
+#BlueJ class context
+#Sun Oct 18 16:39:59 ART 2026
+comment0.target=Zoologico
+comment1.params=p_nombre
+comment1.target=Zoologico(java.lang.String)
+comment2.params=p_visitante
+comment2.target=void nuevoVisitante(Visitante)
+comment3.params=p_visitante
+comment3.target=boolean quitarVisitante(Visitante)
+comment4.params=p_fecha p_tipoVisitante
+comment4.target=void listarTipoVisitantePorFecha(java.util.Calendar, java.lang.String)
+comment5.params=p_fecha
+comment5.target=void listarVisitantePorFecha(java.util.Calendar)
+comment6.params=p_fechaDesde p_fechaHasta
+comment6.target=double recaudacion(java.util.Calendar, java.util.Calendar)
+comment7.target=java.util.HashSet listarPersonasQueVisitaronElZoo()
+numComments=8

@@ -1,0 +1,12 @@
+#BlueJ class context
+#Tue Oct 13 19:52:17 ART 2026
+comment0.target=Profesor
+comment1.params=p_dni p_nombre p_apellido p_anio p_titulo
+comment1.target=Profesor(int, java.lang.String, java.lang.String, int, java.lang.String)
+comment2.params=p_cargo
+comment2.target=boolean agregarCargo(Cargo)
+comment3.target=double sueldoTotal()
+comment4.target=void listarCargos()
+comment5.target=void mostrar()
+comment6.target=java.lang.String mostrarLinea()
+numComments=7

@@ -1,0 +1,18 @@
+#BlueJ class context
+#Sun Oct 18 16:21:46 ART 2026
+comment0.target=Jardin
+comment1.params=p_nombre
+comment1.target=Jardin(java.lang.String)
+comment2.params=p_figura
+comment2.target=boolean agregarFigura(FiguraGeometrica)
+comment3.params=p_figura
+comment3.target=boolean quitarFigura(FiguraGeometrica)
+comment4.target=double cuantosMetros()
+comment4.text=\r\n Calcula la superficie total a cubrir sumando la superficie de todas las figuras.\r\n
+comment5.target=double cuantosLitros()
+comment5.text=\r\n Sabiendo que 4 litros cubren 20 m2, calcula cu\u00E1ntos litros se necesitan[cite\: 6].\r\n (4 litros / 20 m2 \= 0.2 litros por m2).\r\n
+comment6.target=int cuantasLatas()
+comment6.text=\r\n Calcula la cantidad de latas de 4 litros necesarias.\r\n Usa Math.ceil() para redondear hacia arriba si sobra pintura.\r\n
+comment7.target=void detalleFiguras()
+comment7.text=\r\n Emite el listado de las figuras a pintar, el total a cubrir y las latas a comprar[cite\: 6].\r\n
+numComments=8

@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Oct 18 16:24:09 ART 2026
+comment0.target=Lavarropas
+comment1.params=p_marca p_precio p_stock p_programas p_kilos p_automatico
+comment1.target=Lavarropas(java.lang.String, float, int, int, float, boolean)
+comment2.target=void imprimir()
+comment3.params=p_cuotas p_interes
+comment3.target=float creditoConAdicional(int, float)
+numComments=4

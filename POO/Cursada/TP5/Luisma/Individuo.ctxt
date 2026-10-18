@@ -1,0 +1,13 @@
+#BlueJ class context
+#Sun Oct 18 16:42:47 ART 2026
+comment0.target=Individuo
+comment1.params=p_persona p_fechaVisita
+comment1.target=Individuo(Persona, java.util.Calendar)
+comment2.target=Persona getPersona()
+comment3.target=java.lang.String tipoVisitante()
+comment4.target=double entrada()
+comment5.target=void mostrar()
+comment6.params=p_fecha p_visitante
+comment6.target=void listarPorFecha(java.util.Calendar, java.lang.String)
+comment7.target=java.util.HashSet listarPersonas()
+numComments=8
